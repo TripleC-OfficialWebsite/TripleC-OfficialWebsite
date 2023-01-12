@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav">
       <Link to={``} className="navbar-brand brand">
         <img src={logo} width="30" height="30" alt="" />
         Triple C
@@ -27,38 +27,23 @@ const Navbar = () => {
               NEWSLETTER
             </Link>
           </li>
-          <li className="nav-item">
-            <button type="button" className="btn btn-dark tab rect">
+          <li className="nav-item dropdown">
+            <Link to={`projects`} className="btn btn-dark tab rect">
               PROJECTS
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="12"
-                height="12"
-                fill="currentColor"
-                className="bi bi-caret-down-fill margin-left"
-                viewBox="0 0 16 16"
-              >
-                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-              </svg>
-            </button>
+            </Link>
           </li>
-          <li className="nav-item">
-            <button type="button" className="btn btn-dark tab rect">
+          <li className="nav-item dropdown">
+            <Link to={`departments`} className="btn btn-dark tab rect">
               DEPARTMENTS
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="12"
-                height="12"
-                fill="currentColor"
-                className="bi bi-caret-down-fill margin-left"
-                viewBox="0 0 16 16"
-              >
-                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-              </svg>
-            </button>
+            </Link>
           </li>
           <li className="nav-item tab">
-            <button type="button" className="btn btn-primary tab">
+            <button
+              type="button"
+              className="btn btn-primary tab"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
               CONTACT US
             </button>
           </li>
