@@ -1,0 +1,58 @@
+{
+  "welcome": {
+    "title": "Innovate and Collaborate @ TripleC",
+    "subtitle": "This is UCSD Chinese Computer Community. A technology-driven business incubator at UC San Diego, we provide a niche fraught of professional spirit, technical collaboration, and mutual support."
+  },
+  "whatWeDo": {
+    "title": "What we do",
+    "subtitle": "\"To build a community of innovation and collaboration. To share ideas and skills. To grow.\"",
+    "sections": [
+      {
+        "title": "We learn.",
+        "subtitles": ["Educational Program", "Technical Workshops"],
+        "descriptions": [
+          "A group of projects that aims at improving the technical skills of entry-level members. Topics include Android Development, Web development, and Product Design.",
+          "We host technical workshops every quarter, with topics including computer vision, product management, internship experience, etc."
+        ]
+      },
+      {
+        "title": "We code()",
+        "subtitles": ["A Project-Based Student Org", "Pragmatic Minds"],
+        "descriptions": [
+          "A project-based student organization, we have proudly finished more than twenty projects in the last two years. Our projects range from mobile apps to data analysis, from deep learning to web apps. Check out our featured projects!",
+          "Our first priority is always to support our development teams and ensure the engineering success of our projects. We arm every project group with an arsenal of supporting resources.In Code We Trust; In code we Make it happen."
+        ]
+      },
+      {
+        "title": "We learn.",
+        "subtitles": ["\"Demo Day", "Intern Panel\""],
+        "descriptions": [
+          "Our grand event for each quarter. We showcase our latest achievement to our general members and industry partners.",
+          "Every fall quarter, we invite successful community members to share their industry experience. They always give wonderful insights."
+        ]
+      }
+    ]
+  },
+  "featuredProjects": {
+    "title": "Featured Projects",
+    "subtitle": "\"Behold, their names are in gold!\"",
+    "sections": [
+      {
+        "title": "",
+        "imagePath": "",
+        "description": "",
+        "link": ""
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Time Line",
+    "subtitle": "\"It’s the time that I’ve wasted here that makes you a masterpiece.\"",
+    "events": [{ "time": "", "title": "", "description": "" }]
+  },
+  "photoAlbum": {
+    "title": "Photo Album",
+    "subtitle": "\"Toast to the ones here today. Toast to the ones that we met on the way.\"",
+    "photos": ["photoPath1"]
+  }
+}
