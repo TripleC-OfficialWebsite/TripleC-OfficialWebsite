@@ -1,7 +1,7 @@
 import "./Home.css";
 import logo from "../../Images/logo.png";
 import Welcome from "../../Components/Welcome/Welcome";
-import Photo_Album from "../../Components/Photo_Album/Photo_Album"
+import Photo_Album from "../../Components/photoAlbum/photoAlbum"
 
 const Home = () => {
   return (
