@@ -1,12 +1,11 @@
 import "./Navbar.css";
-import logo from "./Images/logo.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav">
       <Link to={``} className="navbar-brand brand">
-        <img src={logo} width="30" height="30" alt="" />
+        <img src={"../Images/logo.png"} width="30" height="30" alt="" />
         Triple C
       </Link>
       <button
