@@ -1,0 +1,33 @@
+.Pro1Photo{
+    width: 20rem;
+    height: 20rem;
+}
+
+.fpLayout{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 95vh;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.Project{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 95vh;
+    align-items: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.titleSection{
+    flex-direction: column;
+}
+
+.Project1{
+    flex-direction: column;
+}

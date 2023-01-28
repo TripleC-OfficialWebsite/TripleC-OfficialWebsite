@@ -38,9 +38,9 @@
     "subtitle": "\"Behold, their names are in gold!\"",
     "sections": [
       {
-        "title": "",
-        "imagePath": "",
-        "description": "",
+        "title": "Kaggle competition",
+        "imagePath": "../../Images/featured-project/project1.jpg",
+        "description": "This is the description for project 1",
         "link": ""
       }
     ]
