@@ -43,4 +43,6 @@
     line-height: 2rem;
     font-weight: 500;
   }
-  
+  body {
+    background-color: black;
+  }
