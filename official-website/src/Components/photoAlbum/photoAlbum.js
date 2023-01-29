@@ -1,29 +1,5 @@
-import "./photoAlbum.css"; 
+import "./photoAlbum.css";
 import photoAlbumJson from "../../Content/home.json";
-import { useState, useEffect } from "react";
-
-function PhotoAlbum() {  const [images, setImages] = useState([]);
-
-  useEffect(() => {
-    async function fetchImages() {
-      const res = await fetch("../public/CutePic");
-      const data = await res.json();
-      console.log(data);
-      setImages(data);
-    }
-
-    fetchImages();
-  }, []);
-
-  return (
-    <div id="containerPA">
-      {images.map((image) => (
-        <img src={image.url} alt={image.name} key={image.id} />
-      ))}
-    </div>
-
-  );
-}
 
 const photoAlbum = () => {
   return (
@@ -38,5 +14,4 @@ const photoAlbum = () => {
   );
 };
 
-export default PhotoAlbum;
-
+export default photoAlbum;
