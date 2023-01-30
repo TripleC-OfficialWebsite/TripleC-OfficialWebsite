@@ -1,4 +1,5 @@
 import Logo from "./Logo";
+import Timeline from "./timeline/Timeline"
 import "./Welcome.css";
 import welcomeJson from "../../Content/home.json";
 
@@ -13,6 +14,9 @@ const Welcome = () => {
           <h2 className="subtitle">{welcomeJson.welcome.subtitle}</h2>
         </div>
       </div>
+      <div id="timeline">
+        <Timeline />
+      </div>  
     </div>
   );
 };
