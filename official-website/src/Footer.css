@@ -1,0 +1,40 @@
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #272727;
+  padding: 16px;
+}
+
+.socialIcon {
+  width: 24px;
+  height: 24px;
+  margin: 0 16px;
+}
+
+.footerBlock {
+  flex-basis: 33%;
+  color: white;
+  margin: 0 16px;
+}
+
+.blockone {
+  font-weight: 500;
+  line-height: 2rem;
+  font-family: "Fira Sans", sans-serif !important;
+  font-size: 1.25rem !important;
+  letter-spacing: 0.0125em !important;
+}
+
+.blocktwo {
+  text-align: center;
+  font-family: "Fira Sans", sans-serif !important;
+}
+
+.blockthree {
+  text-align: right;
+}
+
+.socialIcon {
+  fill: white;
+}

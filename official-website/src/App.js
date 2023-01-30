@@ -12,12 +12,14 @@ import Newsletter from "./Pages/Newsletter/Newsletter";
 import Projects from "./Pages/Projects/Projects";
 import Departments from "./Pages/Departments/Departments";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 function App() {
   const AppLayout = () => (
     <>
       <Navbar />
       <Outlet />
+      <Footer />
     </>
   );
 
