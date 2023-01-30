@@ -50,6 +50,8 @@
     width: 100px;
     height: 50px;
     font-size: xx-large;
+    color: white;
+    background-color: transparent;
   }
 
   .carousel-next {
@@ -59,4 +61,6 @@
     width: 100px;
     height: 50px;
     font-size: xx-large;
+    color: white;
+    background-color: transparent;
   }

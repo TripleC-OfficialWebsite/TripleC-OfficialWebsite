@@ -25,7 +25,7 @@ const Carousel = () => {
   return (
     <div className="carousel">
         <button className="carousel-prev" onClick={handlePrev}>
-          prev
+          &lt;
         </button>
       <img
         src={images[currentIndex].src}
@@ -33,7 +33,7 @@ const Carousel = () => {
         className="carousel-img"
       />
         <button className="carousel-next" onClick={handleNext}>
-          next
+          &gt;
         </button>
     </div>
   );
