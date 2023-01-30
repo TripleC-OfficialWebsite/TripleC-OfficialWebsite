@@ -1,16 +1,28 @@
 .Pro1Photo{
-    width: 20rem;
-    height: 20rem;
+    width: 70%;
 }
 
 .fpLayout{
     display: flex;
     flex-direction: column;
-    width: 90%;
-    height: 95vh;
     align-items: center;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+
+.titleSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projTitle{
+    font-size: 4rem;
+}
+
+.projSubtitle{
+    font-size: 2rem;
 }
 
 .Project{
@@ -18,16 +30,55 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 90%;
-    height: 95vh;
-    align-items: center;
     margin-left: 30%;
     margin-right: 30%;
 }
 
-.titleSection{
-    flex-direction: column;
+@media screen and (max-width: 960px) { 
+    .Project{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+        align-items: center;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+}
+
+.Pro1Title{
+    font-size: 2.5rem;
+}
+
+.Pro2Title{
+    font-size: 2.5rem;
 }
 
 .Project1{
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 2%;
+    /*margin-inline: 10% 10%;*/
+}
+
+.Project2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 2%;
+}
+
+.txt{
+    font-family: "Fira Sans", sans-serif;
+    word-wrap: break-word;
+    width: 80%;
+    height: 100%;
+    font-size: 1.2rem;
+}
+
+div.txt{
+    text-align: justify;
 }
