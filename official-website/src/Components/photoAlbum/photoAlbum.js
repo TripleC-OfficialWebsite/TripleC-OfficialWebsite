@@ -2,7 +2,7 @@ import "./photoAlbum.css";
 import React, { useState } from "react";
 import photoAlbumJson from "../../Content/home.json";
 
-const images = require.context('./CutePic', false, /\.(png|jpe?g|svg)$/);
+const images = require.context('../../../public/images/CutePic2', false, /\.(png|jpe?g|svg)$/);
 const imageSources = images.keys().map((key) => images(key));
 
 const Carousel = () => {
@@ -26,7 +26,6 @@ const Carousel = () => {
           className="carousel-img"
         />
 
-      
         <button className="carousel-next" onClick={handleNext}>
           &gt;
         </button>
