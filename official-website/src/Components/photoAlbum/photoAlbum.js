@@ -2,14 +2,14 @@ import "./photoAlbum.css";
 import React, { useState } from "react";
 import photoAlbumJson from "../../Content/home.json";
 import logo from "./logo.png";
-import logo123 from "./public/images/logo123.png"
+//import logo123 from "./public/images/logo123.png"
 
 //import Carousel from '@sefailyasoz/react-carousel';
 
 const images = [
   { src: "https://picsum.photos/200/300", alt: "image1" },
   //{ src: logo123, alt: "image2" },
-  { src: logo, alt: "image5" }
+  //{ src: logo, alt: "image5" }
 ];
 
 const Carousel = () => {
