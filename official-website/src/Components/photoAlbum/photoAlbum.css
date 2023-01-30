@@ -40,6 +40,23 @@
   .carousel {
     position: absolute; 
     top: 100%; bottom: 50%; 
-    left: 42%; transform: translate(-50%, -50%); text-align: center;
-    
+    left: 50%; transform: translate(-50%, -50%); text-align: center;
+  }
+
+  .carousel-prev {
+    position: absolute; 
+    top: 150px;
+    left: -150%; 
+    width: 100px;
+    height: 50px;
+    font-size: xx-large;
+  }
+
+  .carousel-next {
+    position: absolute; 
+    top: 150px;
+    right: -150%; 
+    width: 100px;
+    height: 50px;
+    font-size: xx-large;
   }
