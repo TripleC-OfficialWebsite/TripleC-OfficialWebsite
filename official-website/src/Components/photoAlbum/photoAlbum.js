@@ -25,17 +25,17 @@ const Carousel = () => {
 
   return (
     <div className="carousel">
-      <button className="carousel-prev" onClick={handlePrev}>
-        Prev
-      </button>
+        <button className="carousel-prev" onClick={handlePrev}>
+          &lt;
+        </button>
       <img
         src={images[currentIndex].src}
         alt={images[currentIndex].alt}
         className="carousel-img"
       />
-      <button className="carousel-next" onClick={handleNext}>
-        Next
-      </button>
+        <button className="carousel-next" onClick={handleNext}>
+          &gt;
+        </button>
     </div>
   );
 };
