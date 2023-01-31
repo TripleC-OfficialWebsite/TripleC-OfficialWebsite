@@ -1,13 +1,26 @@
+.fpPack{
+    display: flex;
+    background-color: #272727;
+    justify-content: center;
+}
+
 .Pro1Photo{
-    width: 70%;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .fpLayout{
+    background-color: #272727;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    max-width: 1170px;
+    width: 80%;
+}
+
+h1, h2{
+    font-family: "Fira Sans", sans-serif;
 }
 
 
@@ -29,7 +42,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
     margin-left: 30%;
     margin-right: 30%;
 }
@@ -39,19 +52,16 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 90%;
+        width: 200%;
         align-items: center;
         margin-left: 30%;
         margin-right: 30%;
     }
 }
 
-.Pro1Title{
-    font-size: 2.5rem;
-}
-
-.Pro2Title{
-    font-size: 2.5rem;
+.Pro2Title, .Pro1Title{
+    font-size: 3rem;
+    color: #F99417;
 }
 
 .Project1{
@@ -60,7 +70,6 @@
     align-items: center;
     width: 50%;
     margin-top: 2%;
-    /*margin-inline: 10% 10%;*/
 }
 
 .Project2{
@@ -74,11 +83,21 @@
 .txt{
     font-family: "Fira Sans", sans-serif;
     word-wrap: break-word;
-    width: 80%;
+    width: 85%;
     height: 100%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 div.txt{
     text-align: justify;
 }
+
+.color{
+    color: white;
+}
+
+/* .Pro1Title .Pro2Title{
+    background-color: linear-gradient(90deg,#ffeb3b,#ff9800);
+    color: transparent;
+
+} */
