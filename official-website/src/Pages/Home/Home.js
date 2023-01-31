@@ -1,18 +1,19 @@
-import "./Home.css";
-import logo from "../../Images/logo.png";
-import Welcome from "../../Components/Welcome/Welcome";
+import './Home.css'
+import logo from '../../Images/logo.png'
+import Welcome from '../../Components/Welcome/Welcome'
+import Timeline from '../../Components/Timeline/Timeline'
 import Featured from "../../Components/featured-project/Featured";
-import Photo_Album from "../../Components/photoAlbum/photoAlbum"
+import Photo_Album from '../../Components/photoAlbum/photoAlbum'
 
 const Home = () => {
   return (
-    <div style={{ position: "relative" }}>
+    <div style={{ position: 'relative' }}>
       <Welcome />
       <Featured />
-      <Photo_Album/>
-      Home
+      <Timeline />
+      <Photo_Album />
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

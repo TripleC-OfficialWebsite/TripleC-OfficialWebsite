@@ -1,0 +1,48 @@
+.timelineTop {
+  background-color: #121212;
+  position: absolute;
+  margin: 0 auto;
+  color: white;
+}
+.text-center {
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  width: 75%;
+  font-family: "Fira Sans", sans-serif;
+}
+ul {
+  padding:0px;
+}
+.timeline ul li {
+  margin-bottom: 30px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.point {
+  min-width: 35px;
+  height: 35px;
+  background-color: #1976d2;
+  border-radius: 100%;
+  z-index: 2;
+  border: 2px gray solid;
+  position: relative;
+  left: 0.75px;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  left: 50%;
+  background-color: white;
+  text-align: center;
+}

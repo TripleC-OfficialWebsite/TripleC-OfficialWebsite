@@ -56,8 +56,10 @@
   },
   "timeline": {
     "title": "Time Line",
-    "subtitle": "\"It’s the time that I’ve wasted here that makes you a masterpiece.\"",
-    "events": [{ "time": "", "title": "", "description": "" }]
+    "subtitle": "\"It's the time that I've wasted here that makes you a masterpiece.\"",
+    "events": [{"time": "12/2020", "title": "Triple C Mentorship Program", "description": ""},
+    {"time": "11/19/2020", "title": "Intern Panel Fall 2020", "description": "We invited 5 alumni who are currently working in Facebook, Samsara, Tencent to share their experiences from a college student to be a professional employee. They explained what we should do in different stages of college life and how we should approach get connected with interviewers."},
+    {"time": "10/2020", "title": "Education Program Initiate", "description": "By intiating the education program, we intend to help the UCSD students who do not have strong programming background while interested in software development. By the end of the program, we expect the student to be able to individually develop programs."}]
   },
   "photoAlbum": {
     "titlePA": "Photo Album",
