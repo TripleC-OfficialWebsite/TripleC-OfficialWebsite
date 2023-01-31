@@ -9,7 +9,7 @@ const Welcome = () => {
       <div id="container">
         <Logo />
         <div className="titles">
-          <h1 className="title typewriter">{welcomeJson.welcome.title}</h1>
+          <h1 className="title">{welcomeJson.welcome.title}</h1>
           <h2 className="subtitle">{welcomeJson.welcome.subtitle}</h2>
         </div>
       </div>
