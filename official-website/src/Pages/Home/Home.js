@@ -1,14 +1,14 @@
-import "./Home.css";
-import logo from "../../Images/logo.png";
-import Welcome from "../../Components/Welcome/Welcome";
-
+import './Home.css'
+import logo from '../../Images/logo.png'
+import Welcome from '../../Components/Welcome/Welcome'
+import Timeline from '../../Components/Timeline/Timeline'
 const Home = () => {
   return (
-    <div style={{ position: "relative" }}>
+    <div style={{ position: 'relative' }}>
       <Welcome />
-      Home
+      <Timeline />
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

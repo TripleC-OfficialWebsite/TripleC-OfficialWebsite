@@ -1,5 +1,5 @@
 import React from 'react'
-import timelineJson from '../../../Content/home.json'
+import timelineJson from '../../Content/home.json'
 import TimelineItem from './TimelineItem'
 import './TimelineContainer.css'
 export default function TimelineContainer() {
