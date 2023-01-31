@@ -1,7 +1,7 @@
 import "./Home.css";
 import logo from "../../Images/logo.png";
 import Welcome from "../../Components/Welcome/Welcome";
-import WhatWeDo from "../../Components/Welcome/What-We-Do/WhatWeDo";
+import WhatWeDo from "../../Components/What-We-Do/WhatWeDo";
 
 const Home = () => {
   return (
