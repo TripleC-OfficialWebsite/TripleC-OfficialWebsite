@@ -38,21 +38,32 @@
     "subtitle": "\"Behold, their names are in gold!\"",
     "sections": [
       {
-        "title": "",
-        "imagePath": "",
-        "description": "",
+        "title": "Kaggle competition",
+        "imagePath": "../Images/featured-project/project1.jpg",
+        "description": 
+          "Lose john poor same it case do year we. Full how way even the sigh. Extremely nor furniture fat questions now provision incommode preserved. Our side fail find like now. Discovered travelling for insensible partiality unpleasing impossible she. Sudden up my excuse to suffer ladies though or. Bachelor possible marianne directly confined relation as on he."
+        ,
+        "link": ""
+      },
+      {
+        "title": "Kaggle competition 2",
+        "imagePath": "../Images/featured-project/project1.jpg",
+        "description": 
+          "Be me shall purse my ought times. Joy years doors all would again rooms these.",
         "link": ""
       }
     ]
   },
   "timeline": {
     "title": "Time Line",
-    "subtitle": "\"It’s the time that I’ve wasted here that makes you a masterpiece.\"",
-    "events": [{ "time": "", "title": "", "description": "" }]
+    "subtitle": "\"It's the time that I've wasted here that makes you a masterpiece.\"",
+    "events": [{"time": "12/2020", "title": "Triple C Mentorship Program", "description": ""},
+    {"time": "11/19/2020", "title": "Intern Panel Fall 2020", "description": "We invited 5 alumni who are currently working in Facebook, Samsara, Tencent to share their experiences from a college student to be a professional employee. They explained what we should do in different stages of college life and how we should approach get connected with interviewers."},
+    {"time": "10/2020", "title": "Education Program Initiate", "description": "By intiating the education program, we intend to help the UCSD students who do not have strong programming background while interested in software development. By the end of the program, we expect the student to be able to individually develop programs."}]
   },
   "photoAlbum": {
-    "title": "Photo Album",
-    "subtitle": "\"Toast to the ones here today. Toast to the ones that we met on the way.\"",
+    "titlePA": "Photo Album",
+    "subtitlePA": "\"Toast to the ones here today. Toast to the ones that we met on the way.\"",
     "photos": ["photoPath1"]
   }
 }
