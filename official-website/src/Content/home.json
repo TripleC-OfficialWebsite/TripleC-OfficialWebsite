@@ -53,8 +53,8 @@
     {"time": "10/2020", "title": "Education Program Initiate", "description": "By intiating the education program, we intend to help the UCSD students who do not have strong programming background while interested in software development. By the end of the program, we expect the student to be able to individually develop programs."}]
   },
   "photoAlbum": {
-    "title": "Photo Album",
-    "subtitle": "\"Toast to the ones here today. Toast to the ones that we met on the way.\"",
+    "titlePA": "Photo Album",
+    "subtitlePA": "\"Toast to the ones here today. Toast to the ones that we met on the way.\"",
     "photos": ["photoPath1"]
   }
 }
