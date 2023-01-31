@@ -1,0 +1,72 @@
+  #containerPA {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 95vh;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .titlesPA {
+    color: white;
+    width: 100%;
+  }
+  
+  .titlePA {
+    position: relative; 
+    top: -20%; left: 50%; transform: translate(-50%, -50%); text-align: center;
+    color: white;
+    font-family: "Fira Sans", sans-serif;
+    word-break: break-word;
+    font-size: 3rem !important;
+    font-weight: 700;
+  }
+  
+  .subtitlePA {
+    position: relative; 
+    top: 20%; left: 50%; transform: translate(-50%, -50%); text-align: center;
+    color: white;
+    font-family: "Fira Sans", sans-serif;
+    word-break: break-word;
+    font-size: 1.25rem !important;
+    line-height: 2rem;
+    font-weight: 500;
+  }
+  
+  body {
+    background-color: black;
+  }
+
+  .carousel {
+    position: absolute; 
+    top: 100%; bottom: 50%; 
+    left: 50%; transform: translate(-50%, -50%); text-align: center;
+  }
+
+  .carousel-prev {
+    position: absolute; 
+    top: 150px;
+    left: -40%; 
+    width: 100px;
+    height: 50px;
+    font-size: xx-large;
+    color: white;
+    background-color: transparent;
+  }
+
+  .carousel-next {
+    position: absolute; 
+    top: 150px;
+    right: -40%; 
+    width: 100px;
+    height: 50px;
+    font-size: xx-large;
+    color: white;
+    background-color: transparent;
+  }
+
+  .carousel-img {
+    width: 500px;
+    height: relative;
+  }

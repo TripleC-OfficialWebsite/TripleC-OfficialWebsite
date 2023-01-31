@@ -60,8 +60,8 @@
     "events": [{ "time": "", "title": "", "description": "" }]
   },
   "photoAlbum": {
-    "title": "Photo Album",
-    "subtitle": "\"Toast to the ones here today. Toast to the ones that we met on the way.\"",
+    "titlePA": "Photo Album",
+    "subtitlePA": "\"Toast to the ones here today. Toast to the ones that we met on the way.\"",
     "photos": ["photoPath1"]
   }
 }
