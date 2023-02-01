@@ -1,6 +1,5 @@
 .timelineTop {
   background-color: #121212;
-  position: absolute;
   margin: 0 auto;
   color: white;
 }
@@ -17,7 +16,7 @@
   font-family: "Fira Sans", sans-serif;
 }
 ul {
-  padding:0px;
+  padding: 0px;
 }
 .timeline ul li {
   margin-bottom: 30px;

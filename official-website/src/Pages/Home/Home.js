@@ -1,5 +1,4 @@
 import "./Home.css";
-import logo from "../../Images/logo.png";
 import Welcome from "../../Components/Welcome/Welcome";
 import WhatWeDo from "../../Components/What-We-Do/WhatWeDo";
 import Timeline from "../../Components/Timeline/Timeline";
@@ -8,7 +7,7 @@ import PhotoAlbum from "../../Components/photoAlbum/photoAlbum";
 
 const Home = () => {
   return (
-    <div style={{ position: "relative" }}>
+    <div className="homeContainer">
       <Welcome />
       <WhatWeDo />
       <Featured />

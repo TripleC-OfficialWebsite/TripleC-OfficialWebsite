@@ -10,12 +10,12 @@ const WhatWeDo = () => {
     <div>
       <div id="container1">
         <div className="titles">
-          <div className="title">{whatWeDoJson.whatWeDo.title}</div>
-          <div className="subtitle">{whatWeDoJson.whatWeDo.subtitle}</div>
+          <h1 className="title">{whatWeDoJson.whatWeDo.title}</h1>
+          <h2 className="subtitle">{whatWeDoJson.whatWeDo.subtitle}</h2>
 
           <div className="sections">
             <div class="column">
-              <Icon path={mdiBook} size={1} className="iconBook" />
+              <Icon path={mdiBook} size={1.5} className="iconBook" />
               <div className="section_title">
                 {whatWeDoJson.whatWeDo.sections[0].title}
               </div>
@@ -36,7 +36,7 @@ const WhatWeDo = () => {
             </div>
 
             <div class="column">
-              <Icon path={mdiXml} size={1} className="iconXml" />
+              <Icon path={mdiXml} size={1.5} className="iconXml" />
               <div className="section_title">
                 {whatWeDoJson.whatWeDo.sections[1].title}
                 <div className="blue_color">code( )</div>
@@ -59,7 +59,7 @@ const WhatWeDo = () => {
             </div>
 
             <div class="column">
-              <Icon path={mdiAccountGroup} size={1} className="iconGroup" />
+              <Icon path={mdiAccountGroup} size={1.5} className="iconGroup" />
               <div className="section_title">
                 {whatWeDoJson.whatWeDo.sections[2].title}
               </div>

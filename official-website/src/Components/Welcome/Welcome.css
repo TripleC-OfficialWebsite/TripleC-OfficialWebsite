@@ -1,10 +1,10 @@
 .home-cover {
-  background-image: url("/src/Images/homepage_cover.png");
+  background-image: url("/public/Images/homepage_cover.png");
   display: block;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 95vh;
+  height: 100vh;
   opacity: 1;
   position: absolute;
   top: 0;
@@ -24,22 +24,34 @@
   margin-right: 5%;
 }
 
-.titles {
+.welcomeTitles {
   color: white;
-  width: 100%;
+  width: 60%;
 }
 
-.title {
+.welcomeTitle {
   font-family: "Fira Sans", sans-serif;
   word-break: break-word;
   font-size: 3rem !important;
   font-weight: 700;
+  width: 100%;
 }
 
-.subtitle {
+.welcomeSubtitle {
   font-family: "Fira Sans", sans-serif;
   word-break: break-word;
   font-size: 1.25rem !important;
   line-height: 2rem;
   font-weight: 500;
+  width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+  #container {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+  .welcomeTitles {
+    width: 90%;
+  }
 }
