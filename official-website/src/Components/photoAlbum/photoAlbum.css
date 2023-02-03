@@ -3,9 +3,10 @@
   flex-direction: column;
   width: 90%;
   align-items: center;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 3rem;
+  max-width: 1170px;
 }
 
 .titlePA {
@@ -33,7 +34,7 @@ body {
 }
 
 .carousel-root {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
 }
 
