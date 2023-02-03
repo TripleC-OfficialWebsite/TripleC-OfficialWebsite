@@ -14,10 +14,10 @@
   position: relative;
   margin: 0 auto;
   width: 75%;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 ul {
-  padding:0px;
+  padding: 0px;
 }
 .timeline ul li {
   margin-bottom: 30px;
@@ -38,11 +38,18 @@ ul {
   left: 0.75px;
 }
 .timeline::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 100%;
   width: 1px;
   left: 50%;
   background-color: white;
   text-align: center;
+}
+
+.timeline-button {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  margin-top: -35px;
 }

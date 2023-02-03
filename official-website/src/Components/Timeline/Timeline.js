@@ -18,6 +18,11 @@ function Timeline() {
           <TimelineContainer />
         </ul>
       </div>
+      <div className='timeline-button'>
+        <button type='button' class='btn btn-outline-light'>
+          LOAD MORE
+        </button>
+      </div>
     </div>
   )
 }

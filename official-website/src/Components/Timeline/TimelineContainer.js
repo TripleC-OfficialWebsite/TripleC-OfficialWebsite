@@ -5,15 +5,12 @@ import './TimelineContainer.css'
 export default function TimelineContainer() {
   return (
     <>
-          {timelineJson.timeline.events.map((single_event, idx) => {
-            return (
-              //<li>
-                <TimelineItem
-                  single_event={single_event}
-                  key={idx}
-                />
-            )
-          })}
+      {timelineJson.timeline.events.map((single_event, idx) => {
+        return (
+          //<li>
+          <TimelineItem single_event={single_event} key={idx} />
+        )
+      })}
     </>
   )
 }

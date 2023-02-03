@@ -9,7 +9,7 @@ const Home = () => {
     <div style={{ position: 'relative' }}>
       <Welcome />
       <Timeline />
-      <Photo_Album />
+      {/* <Photo_Album /> */}
     </div>
   )
 }
