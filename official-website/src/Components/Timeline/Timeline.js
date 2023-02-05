@@ -8,6 +8,7 @@ const eventsPerPage = 3;
 let arrayForHoldingEvents = [];
 
 function Timeline() {
+  console.log(arrayForHoldingEvents.length);
   const [eventsToShow, setEventsToShow] = useState([]);
   const [next, setNext] = useState(3);
 
@@ -18,7 +19,9 @@ function Timeline() {
   };
 
   useEffect(() => {
-    loopWithSlice(0, eventsPerPage);
+    if (arrayForHoldingEvents.length === 0) {
+      loopWithSlice(0, eventsPerPage);
+    } 
   }, []);
 
   const handleShowMoreEvents = () => {

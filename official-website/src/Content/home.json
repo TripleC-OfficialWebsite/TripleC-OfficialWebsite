@@ -73,7 +73,10 @@
       {"time" : "4", "title": "Four", "description": ""},
       {"time" : "5", "title": "Five", "description": ""},
       {"time" : "6", "title": "Six", "description": ""},
-      {"time" : "7", "title": "Seven", "description": ""}
+      {"time" : "7", "title": "Seven", "description": ""},
+      {"time" : "8", "title": "Eight", "description": ""},
+      {"time" : "9", "title": "Nine", "description": ""},
+      {"time" : "10", "title": "Ten", "description": ""}
     ]
   },
   "photoAlbum": {

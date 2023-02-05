@@ -14,7 +14,7 @@ const WhatWeDo = () => {
           <h2 className="subtitle">{whatWeDoJson.whatWeDo.subtitle}</h2>
 
           <div className="sections">
-            <div class="column">
+            <div className="column">
               <Icon path={mdiBook} size={1.5} className="iconBook" />
               <div className="section_title">
                 {whatWeDoJson.whatWeDo.sections[0].title}
@@ -35,7 +35,7 @@ const WhatWeDo = () => {
               </div>
             </div>
 
-            <div class="column">
+            <div className="column">
               <Icon path={mdiXml} size={1.5} className="iconXml" />
               <div className="section_title">
                 {whatWeDoJson.whatWeDo.sections[1].title}
@@ -58,7 +58,7 @@ const WhatWeDo = () => {
               </div>
             </div>
 
-            <div class="column">
+            <div className="column">
               <Icon path={mdiAccountGroup} size={1.5} className="iconGroup" />
               <div className="section_title">
                 {whatWeDoJson.whatWeDo.sections[2].title}
