@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import TimelineContainer from './TimelineContainer';
+import LoadMore from './LoadMore';
 import timelineJson from '../../Content/home.json';
 import './Timeline.css';
 
@@ -43,9 +44,7 @@ function Timeline() {
           <TimelineContainer eventsToRender={eventsToShow}/>
       </div>
       <div className='timeline-button'>
-          <button onClick={handleShowMoreEvents} className='btn btn-outline-light'>
-            LOAD MORE
-          </button>
+          <LoadMore handleShowMoreEvents={handleShowMoreEvents} numEvents={events.length} numDisplayed={eventsToShow.length}/>
       </div>
     </div>
   )

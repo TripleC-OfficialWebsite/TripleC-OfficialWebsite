@@ -69,14 +69,7 @@
         "time": "10/2020",
         "title": "Education Program Initiate",
         "description": "By intiating the education program, we intend to help the UCSD students who do not have strong programming background while interested in software development. By the end of the program, we expect the student to be able to individually develop programs."
-      }, 
-      {"time" : "4", "title": "Four", "description": ""},
-      {"time" : "5", "title": "Five", "description": ""},
-      {"time" : "6", "title": "Six", "description": ""},
-      {"time" : "7", "title": "Seven", "description": ""},
-      {"time" : "8", "title": "Eight", "description": ""},
-      {"time" : "9", "title": "Nine", "description": ""},
-      {"time" : "10", "title": "Ten", "description": ""}
+      }
     ]
   },
   "photoAlbum": {
