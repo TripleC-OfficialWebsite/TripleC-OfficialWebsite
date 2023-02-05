@@ -20,3 +20,8 @@
 .margin-left {
   margin-left: 8px;
 }
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+}

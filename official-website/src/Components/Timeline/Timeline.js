@@ -1,27 +1,48 @@
-import React from 'react'
-import TimelineContainer from './TimelineContainer'
-import timelineJson from '../../Content/home.json'
-import './Timeline.css'
+import React, { useState, useEffect } from "react";
+import TimelineContainer from './TimelineContainer';
+import timelineJson from '../../Content/home.json';
+import './Timeline.css';
+
+const events = timelineJson.timeline.events;
+const eventsPerPage = 3;
+let arrayForHoldingEvents = [];
+
 function Timeline() {
+  const [eventsToShow, setEventsToShow] = useState([]);
+  const [next, setNext] = useState(3);
+
+  const loopWithSlice = (start, end) => {
+    const slicedEvents = events.slice(start, end);
+    arrayForHoldingEvents = [...arrayForHoldingEvents, ...slicedEvents];
+    setEventsToShow(arrayForHoldingEvents);
+  };
+
+  useEffect(() => {
+    loopWithSlice(0, eventsPerPage);
+  }, []);
+
+  const handleShowMoreEvents = () => {
+    loopWithSlice(next, next + eventsPerPage);
+    setNext(next + eventsPerPage);
+  };
+  
   return (
     <div className='timelineTop'>
       <div>
         <div className='text-center'>
-          <div className='title'>{timelineJson.timeline.title}</div>
-          <div className='subtitle'>{timelineJson.timeline.subtitle}</div>
+          <h1 className='title'>{timelineJson.timeline.title}</h1>
+          <h2 className='subtitle'>{timelineJson.timeline.subtitle}</h2>
         </div>
       </div>
       <div className='timeline'>
         <br></br>
         <br></br>
-        <ul>
-          <TimelineContainer />
-        </ul>
+          <TimelineContainer eventsToRender={eventsToShow}/>
       </div>
       <div className='timeline-button'>
-        <button type='button' class='btn btn-outline-light'>
-          LOAD MORE
-        </button>
+          <button onClick={handleShowMoreEvents} className='btn btn-outline-light'>
+            LOAD MORE
+          </button>
       </div>
     </div>
   )

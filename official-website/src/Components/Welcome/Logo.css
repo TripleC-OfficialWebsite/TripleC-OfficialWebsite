@@ -2,7 +2,13 @@
   display: inline-block;
   filter: drop-shadow(-25px 25px 25px rgba(26, 58, 70, 0.7));
   z-index: 3;
-  width: 80%;
+  width: 20%;
+  margin: 10%;
+}
+@media screen and (max-width: 720px) {
+  #logo-animation {
+    width: 40%;
+  }
 }
 
 /* logo animation  */

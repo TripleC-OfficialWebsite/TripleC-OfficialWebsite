@@ -1,0 +1,116 @@
+.fpPack {
+  display: flex;
+  background-color: #121212;
+  justify-content: center;
+}
+
+.Pro1Photo {
+  width: 80%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.fpLayout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1170px;
+  width: 80%;
+}
+
+h1,
+h2 {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.titleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  padding-top: 3rem;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2.05rem !important;
+  font-stretch: extra-expanded;
+}
+
+.subtitle {
+  font-family: "Fira Sans", sans-serif;
+  word-break: break-word;
+  font-size: 1rem !important;
+  line-height: 2rem;
+  font-weight: 400;
+  margin-top: -0.5%;
+}
+
+.Project {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.Project1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-top: 2%;
+}
+
+.Project2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-top: 2%;
+}
+
+@media screen and (max-width: 960px) {
+  .Project {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .Project1 {
+    width: 100%;
+  }
+  .Project2 {
+    width: 100%;
+  }
+}
+
+.Pro2Title,
+.Pro1Title {
+  word-break: break-word;
+  font-size: 1.5rem !important;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  color: #f99417;
+}
+
+.txt {
+  font-family: "Fira Sans", sans-serif;
+  word-wrap: break-word;
+  width: 85%;
+  height: 100%;
+  padding-bottom: 0.5rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+div.txt {
+  text-align: justify;
+}
+
+.color {
+  color: white;
+}

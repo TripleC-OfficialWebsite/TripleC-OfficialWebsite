@@ -1,0 +1,131 @@
+@media screen and (max-width: 960px) {
+  .sections {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .column {
+    width: 90% !important;
+  }
+  .subtitle {
+    padding-bottom: 3rem !important;
+  }
+  .blink {
+    margin-top: -1% !important;
+  }
+}
+
+.blink {
+  animation: blinker 1.5s steps(2) infinite;
+  color: rgb(172, 172, 172);
+  font-family: "Fira Sans", sans-serif;
+  font-size: 2rem;
+  margin-top: -2%;
+  font-weight: 200;
+}
+@keyframes blinker {
+  0% {
+    opacity: 0;
+  }
+}
+
+#container1 {
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  background-color: #121212;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.titles {
+  color: white;
+  width: 100%;
+}
+
+.title {
+  padding-top: 3rem;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2.05rem !important;
+  font-stretch: extra-expanded;
+}
+
+.subtitle {
+  font-family: "Fira Sans", sans-serif;
+  word-break: break-word;
+  font-size: 1rem !important;
+  line-height: 2rem;
+  font-weight: 400;
+  margin-top: -0.5%;
+}
+
+.sections {
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.section_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Fira Sans", sans-serif;
+  word-break: break-word;
+  font-size: 1.5rem !important;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.section_subtitle {
+  text-align: left;
+  font-family: "Fira Sans", sans-serif;
+  word-break: break-word;
+  font-weight: 600;
+  font-size: 1.25rem !important;
+}
+
+.section_contents {
+  font-family: "Fira Sans", sans-serif;
+  padding-bottom: 0.5rem;
+  text-align: left;
+  color: rgb(176, 173, 173);
+  font-size: 1rem;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-top: 2rem;
+}
+
+.blue_color {
+  padding-left: 2%;
+  color: rgb(128, 171, 239);
+  font-family: "Fira Sans", sans-serif;
+  word-break: break-word;
+  font-size: 1.5rem !important;
+  font-weight: 500;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.iconBook {
+  color: #2196f3;
+}
+
+.iconXml {
+  color: #fbc02d;
+}
+
+.iconGroup {
+  color: #e53935;
+}

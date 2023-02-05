@@ -1,8 +1,8 @@
 .timelineTop {
   background-color: #121212;
-  position: absolute;
   margin: 0 auto;
   color: white;
+  max-width: 1170px;
 }
 .text-center {
   color: white;
@@ -13,8 +13,8 @@
 .timeline {
   position: relative;
   margin: 0 auto;
-  width: 75%;
-  font-family: 'Fira Sans', sans-serif;
+  width: 80%;
+  font-family: "Fira Sans", sans-serif;
 }
 ul {
   padding: 0px;

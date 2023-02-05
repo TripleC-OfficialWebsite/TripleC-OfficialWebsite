@@ -3,8 +3,6 @@ const Logo = () => {
   return (
     <svg
       id="logo-animation"
-      width="300"
-      height="300"
       data-name="图层 1"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 426.2 464.21"

@@ -1,16 +1,13 @@
 import React from 'react'
-import timelineJson from '../../Content/home.json'
+// import timelineJson from '../../Content/home.json'
 import TimelineItem from './TimelineItem'
 import './TimelineContainer.css'
-export default function TimelineContainer() {
+export default function TimelineContainer({eventsToRender}) {
   return (
-    <>
-      {timelineJson.timeline.events.map((single_event, idx) => {
-        return (
-          //<li>
+    <ul>
+      {eventsToRender.map((single_event, idx) => (
           <TimelineItem single_event={single_event} key={idx} />
-        )
-      })}
-    </>
+        ))}
+    </ul>
   )
 }

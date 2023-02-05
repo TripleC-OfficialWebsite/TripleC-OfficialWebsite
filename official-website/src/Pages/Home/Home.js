@@ -1,17 +1,20 @@
-import './Home.css'
-import logo from '../../Images/logo.png'
-import Welcome from '../../Components/Welcome/Welcome'
-import Timeline from '../../Components/Timeline/Timeline'
-import Photo_Album from '../../Components/photoAlbum/photoAlbum'
+import "./Home.css";
+import Welcome from "../../Components/Welcome/Welcome";
+import WhatWeDo from "../../Components/What-We-Do/WhatWeDo";
+import Timeline from "../../Components/Timeline/Timeline";
+import Featured from "../../Components/featured-project/Featured";
+import PhotoAlbum from "../../Components/photoAlbum/photoAlbum";
 
 const Home = () => {
   return (
-    <div style={{ position: 'relative' }}>
+    <div className="homeContainer">
       <Welcome />
+      <WhatWeDo />
+      <Featured />
       <Timeline />
-      {/* <Photo_Album /> */}
+      <PhotoAlbum />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
