@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/TripleC-OfficialWebsite/static/css/main.34bf6afb.css",
-    "main.js": "/TripleC-OfficialWebsite/static/js/main.6990a30a.js",
+    "main.js": "/TripleC-OfficialWebsite/static/js/main.00db0726.js",
     "static/media/homepage_cover.png": "/TripleC-OfficialWebsite/static/media/homepage_cover.65471928f5b44aa0289a.png",
     "index.html": "/TripleC-OfficialWebsite/index.html",
     "main.34bf6afb.css.map": "/TripleC-OfficialWebsite/static/css/main.34bf6afb.css.map",
-    "main.6990a30a.js.map": "/TripleC-OfficialWebsite/static/js/main.6990a30a.js.map"
+    "main.00db0726.js.map": "/TripleC-OfficialWebsite/static/js/main.00db0726.js.map"
   },
   "entrypoints": [
     "static/css/main.34bf6afb.css",
-    "static/js/main.6990a30a.js"
+    "static/js/main.00db0726.js"
   ]
 }
