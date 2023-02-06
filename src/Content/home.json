@@ -39,13 +39,13 @@
     "sections": [
       {
         "title": "Kaggle competition",
-        "imagePath": "../Images/featured-project/project1.jpg",
+        "imagePath": "./Images/featured-project/project1.jpg",
         "description": "Lose john poor same it case do year we. Full how way even the sigh. Extremely nor furniture fat questions now provision incommode preserved. Our side fail find like now. Discovered travelling for insensible partiality unpleasing impossible she. Sudden up my excuse to suffer ladies though or. Bachelor possible marianne directly confined relation as on he.",
         "link": ""
       },
       {
         "title": "Kaggle competition 2",
-        "imagePath": "../Images/featured-project/project1.jpg",
+        "imagePath": "./Images/featured-project/project1.jpg",
         "description": "Be me shall purse my ought times. Joy years doors all would again rooms these.",
         "link": ""
       }
@@ -95,6 +95,6 @@
   "photoAlbum": {
     "titlePA": "Photo Album",
     "subtitlePA": "\"Toast to the ones here today. Toast to the ones that we met on the way.\"",
-    "photoPath": { "basePath": "../Images/PhotoAlbum/", "numPics": 12 }
+    "photoPath": { "basePath": "./Images/PhotoAlbum/", "numPics": 12 }
   }
 }
