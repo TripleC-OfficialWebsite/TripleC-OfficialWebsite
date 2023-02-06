@@ -13,6 +13,21 @@
 .timeline ul li:nth-child(odd) {
   flex-direction: row-reverse;
 }
-.timeline ul li:nth-child(odd) .date h4{
-  float: right
+.timeline ul li:nth-child(odd) .date h4 {
+  float: right;
+}
+
+@media screen and (max-width: 960px) {
+  .timeline ul li:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .timeline ul li:nth-child(even) .date h4 {
+    float: right;
+  }
+  .timeline ul li:nth-child(even) .content {
+    padding-left: 10px;
+  }
+  .timeline ul li:nth-child(even) .date {
+    padding-right: 10px;
+  }
 }
