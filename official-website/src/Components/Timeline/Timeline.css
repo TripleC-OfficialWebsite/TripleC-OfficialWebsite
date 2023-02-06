@@ -38,7 +38,7 @@ ul {
   left: 0.75px;
 }
 .timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 1px;
@@ -52,4 +52,10 @@ ul {
   justify-content: center;
   padding: 15px;
   margin-top: -35px;
+}
+
+@media screen and (max-width: 960px) {
+  .timeline::before {
+    left: 17px;
+  }
 }
