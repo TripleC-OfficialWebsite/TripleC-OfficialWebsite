@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
   Outlet,
   createRoutesFromElements,
@@ -23,7 +23,7 @@ function App() {
     </>
   );
 
-  const router = createBrowserRouter(
+  const router = createHashRouter(
     createRoutesFromElements(
       <Route element={<AppLayout />}>
         <Route path="/" element={<Home />} />
