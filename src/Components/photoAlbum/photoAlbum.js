@@ -1,5 +1,5 @@
 import "./photoAlbum.css";
-import React, { useState } from "react";
+import React from "react";
 import photoAlbumJson from "../../Content/home.json";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -59,7 +59,7 @@ const PaCarousel = () => {
             <div>
               <img
                 src={
-                  photoAlbumJson.photoAlbum.photoPath.basePath + val + ".png"
+                  photoAlbumJson.photoAlbum.photoPath.basePath + val + ".jpg"
                 }
                 alt="da"
               />
