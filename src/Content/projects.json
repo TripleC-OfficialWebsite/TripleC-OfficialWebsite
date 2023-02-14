@@ -1,14 +1,14 @@
 {
   "Label": {
-    "title": "",
-    "timeline": "",
-    "description": "",
+    "title": "Label",
+    "timeline": "To Be Decided",
+    "description": "Lack of Description",
     "techStack": [],
     "pictures": [],
     "links": {
-      "demo": "",
-      "repo": "",
-      "contact": ""
+      "demo": "no demo",
+      "repo": "no repo",
+      "contact": "no contact"
     }
   },
   "MapSocial": {
