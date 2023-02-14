@@ -1,0 +1,77 @@
+.parent-card {
+  position: relative;
+  height: 250px;
+  width: 190px;
+}
+.MemberCard {
+  background-color: #121212;
+  margin: 0 auto;
+  color: white;
+  padding: 30px;
+  border: solid 1px gray;
+  text-align: center;
+  border-radius: 5px;
+  border-width: thin;
+  cursor: pointer;
+  height: 250px;
+  width: 190px;
+  transition: 0.5s ease;
+  /* backface-visibility: hidden; */
+  opacity: 1;
+}
+
+.contact-card {
+  opacity: 0;
+  transition: 1s ease;
+  background-color: black;
+  margin: 0 auto;
+  border: solid 1px gray;
+  border-radius: 5px;
+  border-width: thin;
+  cursor: pointer;
+  height: 250px;
+  width: 190px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-image {
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
+.card-bottom {
+  margin-top: 15px;
+}
+
+.member-name {
+  font-size: 16px;
+}
+
+.member-role {
+  margin-top: 5px;
+  color: gray;
+  font-size: 13px;
+}
+
+.parent-card:hover .profile-card {
+  opacity: 0.2;
+}
+
+.parent-card:hover .contact-card {
+  opacity: 0.6;
+}
+
+.Icon {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  margin: 6px;
+}

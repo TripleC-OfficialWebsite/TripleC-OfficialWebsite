@@ -1,8 +1,8 @@
-import "./photoAlbum.css";
-import React, { useState } from "react";
-import photoAlbumJson from "../../Content/home.json";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
+import './photoAlbum.css'
+import React, { useState } from 'react'
+import photoAlbumJson from '../../Content/home.json'
+import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
+import { Carousel } from 'react-responsive-carousel'
 // const images = require.context(
 //   "../../../public/images/CutePic2",
 //   false,
@@ -59,30 +59,30 @@ const PaCarousel = () => {
             <div>
               <img
                 src={
-                  photoAlbumJson.photoAlbum.photoPath.basePath + val + ".png"
+                  photoAlbumJson.photoAlbum.photoPath.basePath + val + '.png'
                 }
-                alt="da"
+                alt='da'
               />
             </div>
-          );
+          )
         }
       )}
     </Carousel>
-  );
-};
+  )
+}
 
 //export default Carousel;
 
 const PhotoAlbum = () => {
   return (
     <div>
-      <div id="containerPA">
-        <h1 className="titlePA">{photoAlbumJson.photoAlbum.titlePA}</h1>
-        <h2 className="subtitlePA">{photoAlbumJson.photoAlbum.subtitlePA}</h2>
+      <div id='containerPA'>
+        <h1 className='titlePA'>{photoAlbumJson.photoAlbum.titlePA}</h1>
+        <h2 className='subtitlePA'>{photoAlbumJson.photoAlbum.subtitlePA}</h2>
         <PaCarousel />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default PhotoAlbum;
+export default PhotoAlbum
