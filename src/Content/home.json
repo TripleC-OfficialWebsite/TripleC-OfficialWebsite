@@ -56,45 +56,65 @@
     "subtitle": "\"It's the time that I've wasted here that makes you a masterpiece.\"",
     "events": [
       {
-        "time": "12/2020",
-        "title": "Triple C Mentorship Program",
-        "description": ""
+        "time": "Fall 2022",
+        "title": "Bonfire Social @ La Jolla Shores",
+        "description": "Lose john poor same it case do year we. Full how way even the sigh. Extremely nor furniture fat questions now provision incommode preserved. Our side fail find like now. Discovered travelling for insensible partiality unpleasing impossible she. Sudden up my excuse to suffer ladies though or. Bachelor possible marianne directly confined relation as on he."
       },
       {
-        "time": "11/19/2020",
+        "time": "Spring 2022",
+        "title": "Triple C Coding Contest",
+        "description": "Lose john poor same it case do year we. Full how way even the sigh. Extremely nor furniture fat questions now provision incommode preserved. Our side fail find like now. Discovered travelling for insensible partiality unpleasing impossible she. Sudden up my excuse to suffer ladies though or. Bachelor possible marianne directly confined relation as on he."
+      },
+      {
+        "time": "Winter 2021",
+        "title": "Triple C Mentorship Program",
+        "description": "Lose john poor same it case do year we. Full how way even the sigh. Extremely nor furniture fat questions now provision incommode preserved. Our side fail find like now. Discovered travelling for insensible partiality unpleasing impossible she. Sudden up my excuse to suffer ladies though or. Bachelor possible marianne directly confined relation as on he."
+      },
+      {
+        "time": "Fall 2020",
         "title": "Intern Panel Fall 2020",
         "description": "We invited 5 alumni who are currently working in Facebook, Samsara, Tencent to share their experiences from a college student to be a professional employee. They explained what we should do in different stages of college life and how we should approach get connected with interviewers."
       },
       {
-        "time": "10/2020",
+        "time": "Fall 2020",
         "title": "Education Program Initiate",
         "description": "By intiating the education program, we intend to help the UCSD students who do not have strong programming background while interested in software development. By the end of the program, we expect the student to be able to individually develop programs."
       },
       {
-        "time": "12/2020",
-        "title": "Triple C Mentorship Program",
-        "description": ""
+        "time": "Spring 2020",
+        "title": "Online Demo Day",
+        "description": "120 members, 10 projects"
       },
       {
-        "time": "11/19/2020",
-        "title": "Intern Panel Fall 2020",
-        "description": "We invited 5 alumni who are currently working in Facebook, Samsara, Tencent to share their experiences from a college student to be a professional employee. They explained what we should do in different stages of college life and how we should approach get connected with interviewers."
+        "time": "Winter 2020",
+        "title": "Chinese New Year Team Bonding",
+        "description": "100 members, 11 projects"
       },
       {
-        "time": "10/2020",
-        "title": "Education Program Initiate",
-        "description": "By intiating the education program, we intend to help the UCSD students who do not have strong programming background while interested in software development. By the end of the program, we expect the student to be able to individually develop programs."
+        "time": "Fall 2019",
+        "title": "First Club Orientation Meeting",
+        "description": "Lose john poor same it case do year we. Full how way even the sigh. Extremely nor furniture fat questions now provision incommode preserved. Our side fail find like now. Discovered travelling for insensible partiality unpleasing impossible she. Sudden up my excuse to suffer ladies though or. Bachelor possible marianne directly confined relation as on he."
       },
       {
-        "time": "10/2020",
-        "title": "Education Program Initiate",
-        "description": "By intiating the education program, we intend to help the UCSD students who do not have strong programming background while interested in software development. By the end of the program, we expect the student to be able to individually develop programs."
+        "time": "Spring 2019",
+        "title": "Intelligym",
+        "description": "80 members, 10 projects"
+      },
+      {
+        "time": "Winter 2018",
+        "title": "First GBM and Demo Day",
+        "description": "40 members, 6 projects"
+      },
+      {
+        "time": "Fall 2018",
+        "title": "Triple C established",
+        "description": "15 members, 1 project"
       }
     ]
   },
   "photoAlbum": {
     "titlePA": "Photo Album",
     "subtitlePA": "\"Toast to the ones here today. Toast to the ones that we met on the way.\"",
-    "photoPath": { "basePath": "./Images/PhotoAlbum/", "numPics": 12 }
+    "photoPath": { "basePath": "./Images/PhotoAlbum/", "numPics": 9 }
   }
 }
