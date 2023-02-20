@@ -9,7 +9,6 @@ const eventsPerPage = 3;
 let arrayForHoldingEvents = [];
 
 function Timeline() {
-  console.log(arrayForHoldingEvents.length);
   const [eventsToShow, setEventsToShow] = useState([]);
   const [next, setNext] = useState(3);
 
