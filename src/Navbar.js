@@ -1,6 +1,8 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
+import ProJson from "./Content/projects.json";
+
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav">
@@ -27,9 +29,17 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item dropdown">
-            <Link to={`projects`} className="btn btn-dark tab rect">
+            <div className="ProDropDown">
+              <button className="btn btn-dark tab rect dropdown-toggle" type="button" data-toggle="dropdown">PROJECTS</button>
+              <ul className="dropdown-menu">
+                <li><Link to={`label`}>{ProJson.Label.title}</Link></li>
+                <li><Link to={`projects`}>{ProJson.MapSocial.title}</Link></li>
+                <li><Link to={`projects`}>{ProJson.GoalTritons.title}</Link></li>
+              </ul>
+            </div>
+            {/* <Link to={`projects`} className="btn btn-dark tab rect">
               PROJECTS
-            </Link>
+            </Link> */}
           </li>
           <li className="nav-item dropdown">
             <Link to={`departments`} className="btn btn-dark tab rect">
