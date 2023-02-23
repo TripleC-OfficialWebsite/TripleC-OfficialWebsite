@@ -5,7 +5,7 @@ import {mdiAccountGroup, mdiFileDocumentEdit, mdiHandshake, mdiCurrencyUsd} from
 
 const Body = () => {
     return(
-        <div className="button-container btn-group">
+        <div className="button-container">
             <button className="btn btn-outline-light">
                 <Icon path={mdiAccountGroup} horizontal size={0.75} className='icon'/>
                 JOIN THE TEAM
