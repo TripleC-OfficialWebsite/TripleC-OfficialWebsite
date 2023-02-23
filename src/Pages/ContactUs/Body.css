@@ -10,3 +10,8 @@
     margin: 0.15rem 0;
     font-weight: 600;
 }
+.icon {
+    position: relative;
+    top: 0.15rem;
+    right: 0.5rem;
+}
