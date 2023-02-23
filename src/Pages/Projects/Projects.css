@@ -1,0 +1,45 @@
+#container_2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+.titles{
+    color:white;
+}
+
+.project_name{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-size: 2.7rem !important;
+    font-stretch: extra-expanded;
+}
+.time_line{
+    font-family: "Fira Sans", sans-serif;
+    padding-bottom: 1rem;
+    font-size: 1.5rem !important;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+.description{
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 200;
+    max-width: 700px;
+}
+
+.team{
+    padding-top: 5rem;
+    font-family: "Fira Sans", sans-serif;
+    padding-bottom: 1rem;
+    font-size: 1.5rem !important;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+img{
+    padding-bottom: 2rem;;
+}
