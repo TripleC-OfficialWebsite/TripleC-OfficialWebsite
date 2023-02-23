@@ -17,7 +17,7 @@ function ModalWindow() {
             CONTACT US
         </button>
 
-        <Modal show={show} onHide={handleClose} contentClassName="modalWindow">
+        <Modal show={show} onHide={handleClose} centered>
             <Modal.Header>
                     <div className = "contactUsTitle">
                     <h3 >Contact us</h3>

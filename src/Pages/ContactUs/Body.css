@@ -5,7 +5,7 @@
     align-items: center;
 }
 .btn-group button {
-    width: 80%; 
+    width: 100%; 
     display: block; /* Make the buttons appear below each other */
     margin: 0.15rem 0;
     font-weight: 600;
