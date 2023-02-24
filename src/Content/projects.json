@@ -1,12 +1,12 @@
 {
   "Label": {
-    "title": "",
+    "title": "Label Cluster",
     "timeline": "",
-    "description": "",
+    "description": "LabelCluster是由一群来自美国UC系(加州大学)院校的留学生组成的年轻团队,团队成员均为UCSD(加州大学圣地亚哥分校)、UCI(加州大学尔湾分校)等学校在读学生。我们致力于运用专业的技术为艺术创作者提供更好、更直观的互联网服务平台。LabelCluster目前与TripleC_UCSD合作,由后者提供软件开发等帮助与支持。",
     "techStack": [],
-    "pictures": [],
+    "pictures": ["./Images/Projects/LC_1.png"],
     "links": {
-      "demo": "",
+      "demo": "https://aws-test.dt3d50lzmfrhk.amplifyapp.com/about",
       "repo": "",
       "contact": ""
     }
