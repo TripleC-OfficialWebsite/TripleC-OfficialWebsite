@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import ContactUs from "./Pages/ContactUs/ModalWindow.js";
 
 const Navbar = () => {
   return (
@@ -37,14 +38,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item tab">
-            <button
-              type="button"
-              className="btn btn-primary tab"
-              data-toggle="modal"
-              data-target="#exampleModal"
-            >
-              CONTACT US
-            </button>
+            <ContactUs/>
           </li>
         </ul>
       </div>
