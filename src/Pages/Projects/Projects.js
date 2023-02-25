@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import projects from "../../Content/projects.json";
 import "./Projects.css";
-import Label from "./Label";
-import MapSocial from "./MapSocial";
 
 function App(props) {
   // 每个project对应一个js file
