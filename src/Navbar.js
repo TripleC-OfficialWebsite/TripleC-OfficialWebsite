@@ -5,8 +5,6 @@ import ProJson from "./Content/projects.json";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
-  const [ProItem, setPro] = useState("");
-
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav">
       <Link to={``} className="navbar-brand brand">
@@ -35,9 +33,9 @@ const Navbar = () => {
             <div className="ProDropDown">
               <button className="btn btn-dark tab rect dropdown-toggle" type="button" data-toggle="dropdown">PROJECTS</button>
               <ul className="dropdown-menu">
-                <li value={ProJson.Label.title}><Link to={`projects/Label`} onClick={(event) => setPro(event.target.value)}>{ProJson.Label.title}</Link></li>
-                <li value={ProJson.MapSocial.title}><Link to={`projects/MapSocial`} onClick={(event) => setPro(event.target.value)}>{ProJson.MapSocial.title}</Link></li>
-                <li value={ProJson.GoalTritons.title}><Link to={`projects/GoalTritons`} onClick={(event) => setPro(event.target.value)}>{ProJson.GoalTritons.title}</Link></li>
+                <li value={ProJson.Label.title}><Link to={`projects/Label`}>{ProJson.Label.title}</Link></li>
+                <li value={ProJson.MapSocial.title}><Link to={`projects/MapSocial`}>{ProJson.MapSocial.title}</Link></li>
+                <li value={ProJson.GoalTritons.title}><Link to={`projects/GoalTritons`}>{ProJson.GoalTritons.title}</Link></li>
               </ul>
             </div>
             {/* <Link to={`projects`} className="btn btn-dark tab rect">

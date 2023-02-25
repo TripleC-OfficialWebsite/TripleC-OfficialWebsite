@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import projects from "../../Content/projects.json";
 
-function App() {
+function App(props) {
   const [selectedProject, setSelectedProject] = useState("");
 
   function handleChange(event) {
@@ -10,6 +10,7 @@ function App() {
 
   return (
     <div>
+      <h1 style={{color: 'red'}}>{props.proName}</h1>  {/* test props */}
       <select onChange={handleChange}>
         {Object.entries(projects).map(([id, project]) => (
           <option key={id} value={id}>

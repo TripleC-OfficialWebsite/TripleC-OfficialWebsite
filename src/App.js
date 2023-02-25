@@ -29,10 +29,10 @@ function App() {
       <Route element={<AppLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/newsletter" element={<Newsletter />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/projects/Label" element={<Label />} />
-        <Route path="/projects/MapSocial" element={<Label />} />
-        <Route path="/projects/GoalTritons" element={<Label />} />
+        <Route path="/projects" element={<Projects/>} />
+        <Route path="/projects/Label" element={<Projects proName="label"/>} />
+        <Route path="/projects/MapSocial" element={<Projects proName="mapSocial"/>} />
+        <Route path="/projects/GoalTritons" element={<Projects proName="GoalTritons"/>} />
         <Route path="/departments" element={<Departments />} />
       </Route>
     )
@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className="App">
-      <RouterProvider router={router} />
+      <RouterProvider router={router}/>
     </div>
   );
 }
