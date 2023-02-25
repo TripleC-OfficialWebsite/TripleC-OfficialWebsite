@@ -11,6 +11,7 @@ import Home from "./Pages/Home/Home";
 import Newsletter from "./Pages/Newsletter/Newsletter";
 import Projects from "./Pages/Projects/Projects";
 import Label from "./Pages/Projects/Label";
+import MapSocial from "./Pages/Projects/MapSocial";
 import Departments from "./Pages/Departments/Departments";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
