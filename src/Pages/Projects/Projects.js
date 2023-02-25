@@ -4,43 +4,76 @@ import Label from "./Label";
 import MapSocial from "./MapSocial";
 
 function App(props) {
-  // const [selectedProject, setSelectedProject] = useState("");
+  // 每个project对应一个js file
+  // function handleProPage(proName) {
+  //   switch(proName) {
+  //     case "Label":
+  //       return <Label />
 
-  // function handleChange(event) {
-  //   setSelectedProject(event.target.value);
+  //     // MapSocial
+  //     default :
+  //       return <MapSocial />;
+  //   }
   // }
 
-  function handleProPage(proName) {
-    switch(proName) {
-      case "Label":
-        return <Label />
+  // return (
+  //   <div>
+  //     <h1 style={{color: 'red'}}>{props.proName}</h1>  {/* test props */}
+  //     <>{handleProPage(props.proName)}</>
+  // );
 
-      // MapSocial
-      default :
-        return <MapSocial />;
-    }
-  }
+  // 每个project都在Projects.js里面渲染
+  if(props.proName == "Label")
+    return (
+      <div>
+        <div id="container_2">
+            <div className="titles">
 
-  return (
-    <div>
-      <h1 style={{color: 'red'}}>{props.proName}</h1>  {/* test props */}
-      <>{handleProPage(props.proName)}</>
+            <div className="project_name">{projects.Label.title}</div>
+            <div className="time_line">Timeline - {projects.Label.timeline}</div>
+            <div className="description">Descriptions:</div>
+            <div className="description">{projects.Label.description}</div>
+            <div className="team">Team</div>
+            <div className="member_card"></div>
 
-      {/* <select onChange={handleChange}>
-        {Object.entries(projects).map(([id, project]) => (
-          <option key={id} value={id}>
-            {project.name}
-          </option>
-        ))}
-      </select>
-      {selectedProject && (
-        <div>
-          <h1>{projects[selectedProject].name}</h1>
-          <p>{projects[selectedProject].description}</p>
+            </div>
         </div>
-      )} */}
-    </div>
-  );
+      </div>
+    )
+  else if(props.proName == "MapSocial")
+    return (
+      <div>
+          <div id="container_2">
+              <div className="titles">
+                <div className="project_name">{projects.MapSocial.title}</div>
+                <div className="time_line">Timeline</div>
+                <img src={projects.MapSocial.timeline}width="700"height="150"></img>
+                <div className="description">Descriptions:</div>
+                <div className="description">{projects.MapSocial.description}</div>
+                <div className="team">Team</div>
+                <div className="member_card"></div>
+              </div>
+          </div>
+      </div>
+    )
+  else if(props.proName == "GoalTritons")
+    return (
+      <div>
+          <div id="container_2">
+              <div className="titles">
+
+              <div className="project_name">{projects.GoalTritons.title}</div>
+              <div className="time_line">Timeline</div>
+              <img src={projects.GoalTritons.timeline}width="700"height="150"></img>
+              <div className="description">Descriptions:</div>
+              <div className="description">{projects.GoalTritons.description}</div>
+              <div className="team">Team</div>
+              <div className="member_card"></div>
+
+              </div>
+          </div>
+      </div>
+    ) 
 }
 
 export default App;
