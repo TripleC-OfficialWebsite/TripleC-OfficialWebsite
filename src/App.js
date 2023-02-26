@@ -18,7 +18,9 @@ function App() {
   const AppLayout = () => (
     <>
       <Navbar />
-      <Outlet />
+      <div style={{paddingBottom: '4rem'}}>
+        <Outlet />
+      </div>
       <Footer />
     </>
   );
