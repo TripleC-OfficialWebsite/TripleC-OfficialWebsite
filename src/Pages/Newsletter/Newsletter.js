@@ -17,7 +17,7 @@ const Superlink = () => {
   return(
     <div>
         <h1 className="supertitle">{newsletterJson.newsletters[0].title}</h1>
-        <h2 className="superlink">{newsletterJson.newsletters[0].date}</h2>
+        <h2 className="superdate">{newsletterJson.newsletters[0].date}</h2>
     </div>
   );
 };
