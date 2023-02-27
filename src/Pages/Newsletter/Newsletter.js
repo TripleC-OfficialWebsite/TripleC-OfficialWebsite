@@ -13,11 +13,9 @@ const NewsletterPage = () => {
 };
 const Newsletter = () => {
   return (
-    <div>
-      <div id="newsletter">
-        <h1 className="title">{newsletterJson.title}</h1>
-        <h2 className="subtitle">{newsletterJson.subtitle}</h2>
-      </div>
+    <div id="newsletter">
+      <h1 className="title">{newsletterJson.title}</h1>
+      <h2 className="subtitle">{newsletterJson.subtitle}</h2>
     </div>
   );
 };

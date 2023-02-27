@@ -25,6 +25,10 @@
   line-height: 2rem;
 }
 
+.hr {
+  color: white;
+}
+
 #superlink {
   background-color: rgba(128, 128, 128, 0.254);
   padding: 15px;
