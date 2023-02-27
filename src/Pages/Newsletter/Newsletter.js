@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import newsletterJson from "../../Content/newsletter.json";
 import "./Newsletter.css";
+const link022723 = newsletterJson.newsletters[0].link;
 
 const NewsletterPage = () => {
   return (
@@ -23,7 +24,7 @@ const Newsletter = () => {
 const Superlink = () => {
   return(
     <div id="superlink">
-        <h1 className="supertitle">{newsletterJson.newsletters[0].title}</h1>
+        <a href={link022723} className="supertitle">{newsletterJson.newsletters[0].title}</a>
         <h2 className="superdate">{newsletterJson.newsletters[0].date}</h2>
     </div>
   );
