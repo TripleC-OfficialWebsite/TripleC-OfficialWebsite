@@ -1,0 +1,18 @@
+.button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+.btn {
+    width: 100%; 
+    display: block; /* Make the buttons appear below each other */
+    margin: 0.15rem 0;
+    font-weight: 600;
+}
+.icon {
+    position: relative;
+    top: 0.15rem;
+    right: 0.5rem;
+}

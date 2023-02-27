@@ -5,9 +5,13 @@ import timelineJson from "../../Content/home.json";
 import "./Timeline.css";
 
 function Timeline() {
+<<<<<<< gh-page
   const events = timelineJson.timeline.events;
   const eventsPerPage = 3;
   const [eventsToShow, setEventsToShow] = useState(events.slice(0, 3));
+=======
+  const [eventsToShow, setEventsToShow] = useState([]);
+>>>>>>> main
   const [next, setNext] = useState(3);
 
   const loopWithSlice = (start, end) => {

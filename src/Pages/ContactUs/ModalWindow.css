@@ -1,0 +1,20 @@
+.modal-content{
+    background-color: #181818;
+    font-family: "Fira Sans", sans-serif;
+    width: 86%;
+    left: 7%
+}
+.modal-header{
+    background-image: linear-gradient(#181818, black);
+    border-bottom: 0 none;
+}
+.contactUsTitle{
+    font-weight:600;
+    color: white;
+    padding: 30% 0 0 0;
+}
+.modal-footer{
+    border-top: 1px solid #272727; 
+    width: 90%;
+    margin: 0 auto; 
+}

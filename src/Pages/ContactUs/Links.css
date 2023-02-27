@@ -1,0 +1,12 @@
+.contactFooterContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+  
+.contactSocialIcon {
+    width: 24px;
+    height: 24px;
+    margin: 0 16px;
+    fill: white;
+}
