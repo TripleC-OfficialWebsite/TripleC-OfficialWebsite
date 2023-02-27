@@ -2,6 +2,7 @@
   position: relative;
   height: 250px;
   width: 190px;
+  font-family: 'Fira Sans', sans-serif;
 }
 .MemberCard {
   background-color: #121212;
@@ -16,7 +17,6 @@
   height: 250px;
   width: 190px;
   transition: 0.5s ease;
-  /* backface-visibility: hidden; */
   opacity: 1;
 }
 
