@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import projects from "../../Content/projects.json";
 import "./Projects.css";
-
+// import members from "../../Components/MemberCard/MemberCard.js"
+// members.js 的第 4 行报错，跑不起来，说让member card 的改
 function App(props) {
   if(props.proName == "Label")
     return (
