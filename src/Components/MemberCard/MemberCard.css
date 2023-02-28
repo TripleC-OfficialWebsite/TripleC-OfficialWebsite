@@ -8,7 +8,7 @@
   background-color: #121212;
   margin: 0 auto;
   color: white;
-  padding: 30px;
+  padding: 25px;
   border: solid 1px gray;
   text-align: center;
   border-radius: 5px;
@@ -43,12 +43,9 @@
 }
 
 .member-image {
-  border-radius: 5px;
   max-width: 100%;
   height: auto;
-}
-.card-bottom {
-  margin-top: 15px;
+  border-radius: 3px;
 }
 
 .member-name {
