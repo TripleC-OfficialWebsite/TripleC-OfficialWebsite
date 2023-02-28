@@ -1,20 +1,17 @@
 import React from 'react'
 import MemberCardJson from '../../Content/members.json'
 import './MemberCard.css'
-const members = MemberCardJson.Members[0]
-const image = members['照片(optional)']
-if (!image) {
-  image =
-    'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2014%2F07%2F10%2Fpepperoni-pizza-ck-x.jpg&q=60'
-}
-const image =
-  'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2014%2F07%2F10%2Fpepperoni-pizza-ck-x.jpg&q=60'
-const name = members.英文全名
-const role = members.职位
-const linkedin = members['LinkedIn(optional)']
-const git = members['Github(optional)']
-const email = members['邮箱']
-function MemberCard() {
+function MemberCard({ props }) {
+  const name = props.英文全名
+  const role = props.职位
+  const linkedin = props['LinkedIn(optional)']
+  const git = props['Github(optional)']
+  const email = props['邮箱']
+  const image = props['照片(optional)']
+  if (!image) {
+    image =
+      'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2014%2F07%2F10%2Fpepperoni-pizza-ck-x.jpg&q=60'
+  }
   return (
     <div className='parent-card'>
       <div className='MemberCard'>
