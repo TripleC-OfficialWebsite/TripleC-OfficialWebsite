@@ -4,7 +4,7 @@
   width: 190px;
   font-family: 'Fira Sans', sans-serif;
 }
-.MemberCard {
+.memberCard {
   background-color: #121212;
   margin: 0 auto;
   color: white;
@@ -44,8 +44,7 @@
 
 .member-image {
   max-width: 100%;
-  height: auto;
-  border-radius: 3px;
+  object-fit: contain;
 }
 
 .member-name {
@@ -71,4 +70,13 @@
   height: 24px;
   fill: white;
   margin: 6px;
+}
+
+.disabled {
+  width: 24px;
+  height: 24px;
+  fill: gray;
+  margin: 6px;
+  cursor: not-allowed;
+  pointer-events: none;
 }
