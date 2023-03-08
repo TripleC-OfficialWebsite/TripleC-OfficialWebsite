@@ -7,9 +7,9 @@ const DepartmentMenu = () => {
     <div id="departmentMenuContainer">
       {Object.keys(DepartmentJson).map((element) => {
         return (
-          <div>
+          <h5 className="link" key={element}>
             <Link to={`/departments#${element}`}>{element}</Link>
-          </div>
+          </h5>
         );
       })}
     </div>

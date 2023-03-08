@@ -7,7 +7,7 @@ const DepartmentContent = () => {
     <div id="departmentContentContainer">
       {Object.keys(DepartmentJson).map((element) => {
         return (
-          <div id={element}>
+          <div className="job" id={element} key={element}>
             <h3>{DepartmentJson[element].title}</h3>
             <p>{DepartmentJson[element].description}</p>
             <DepartmentMembers department={element} />

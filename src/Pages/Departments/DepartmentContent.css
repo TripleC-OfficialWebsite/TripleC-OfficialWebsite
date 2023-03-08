@@ -1,3 +1,10 @@
 #departmentContentContainer {
   flex-grow: 3;
+  text-align: center;
+  width: 70%;
+  color: white;
+}
+
+.job{
+  padding: 1rem 0 0 0;
 }
