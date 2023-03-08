@@ -1,0 +1,8 @@
+.memberCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    margin: 0 0.5rem;
+}

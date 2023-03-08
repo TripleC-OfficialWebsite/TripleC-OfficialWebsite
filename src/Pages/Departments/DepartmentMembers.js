@@ -1,4 +1,6 @@
 import MemberCardJson from '../../Content/members.json'
+import MemberCards from './CardsContainer'
+
 const members = MemberCardJson.Members;
 // console.log(members[0].英文全名);
 const DepartmentMembers = (props) => {
@@ -7,9 +9,9 @@ const DepartmentMembers = (props) => {
   const chairs = members.filter(member => ((member.所属部门===department) && (member.职位.includes("Chair"))));
   currDepMembers.sort(compare); // sort members by Last Name
   chairs.forEach(member => currDepMembers.unshift(member)); // Chairs at front 
-  const currMembersNames = currDepMembers.map(member => member.英文全名); // only for testing
+  // const currMembersNames = currDepMembers.map(member => member.英文全名); // only for testing
   return (
-    <div>{currMembersNames.join(', ').toString()}</div>
+      <MemberCards members={currDepMembers}/>
   );
 };
 
