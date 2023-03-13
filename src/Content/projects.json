@@ -1,17 +1,14 @@
 {
   "Label": {
-    "title": "Label",
-    "timeline": "To Be Decided",
-    "description": "Lack of Description",
-    "title": "Label",
-    "timeline": "To Be Decided",
-    "description": "Lack of Description",
+    "title": "Label Cluster",
+    "timeline": "",
+    "description": "LabelCluster是由一群来自美国UC系(加州大学)院校的留学生组成的年轻团队,团队成员均为UCSD(加州大学圣地亚哥分校)、UCI(加州大学尔湾分校)等学校在读学生。我们致力于运用专业的技术为艺术创作者提供更好、更直观的互联网服务平台。LabelCluster目前与TripleC_UCSD合作,由后者提供软件开发等帮助与支持。",
     "techStack": [],
-    "pictures": [],
+    "pictures": ["./Images/Projects/LC_1.png"],
     "links": {
-      "demo": "no demo",
-      "repo": "no repo",
-      "contact": "no contact"
+      "demo": "https://aws-test.dt3d50lzmfrhk.amplifyapp.com/about",
+      "repo": "",
+      "contact": ""
     }
   },
   "MapSocial": {
@@ -37,7 +34,7 @@
   },
   "GoalTritons": {
     "title": "Goal Tritons",
-    "timeline": "To Be Decided",
+    "timeline": "",
     "description": "Goal Tritons is a non-profit B to C product aimed at supporting UCSD Undergraduates, including F-1 International Students, in their career-finding process. It is a responsive informational website that will provide undergraduates a smooth experience in developing professional path and approaching career goal.",
     "techStack": [
       "Vue",
@@ -56,7 +53,7 @@
   },
   "WeRide": {
     "title": "WeRide",
-    "timeline": "To Be Decided",
+    "timeline": "",
     "description": "Daily, thousands of off-campus students at UCSD face massive commuting barriers. The list includes long commutes, expensive parking passes, near-impossible-to-find parking, and the insane rates of current rideshare services. WeRide is a carpool application that seeks to make commuting to campus cheaper, safer, and more convenient. For the drivers, the system will match them with riders on their way to school, they will be paid by the application for the calculated gas money and other small costs. For riders, the system will show them the brief profile of student drivers for them to select on the route to school. The cost will be much lower than uber/lyft and faster than waiting for shuttles/trains.",
     "techStack": ["Spring"],
     "pictures": ["./Images/Projects/WR_1.jpg"],
@@ -68,7 +65,7 @@
   },
   "Defit": {
     "title": "Defit",
-    "timeline": "To Be Decided",
+    "timeline": "",
     "description": "Defit is an English reading/learning tool that can translate long paragraphs based on the user’s English level. The levels that are currently available are high school, CET 4, CET6, TOEFL, and GRE. Users can select their reading proficiency level, and Defit will translate the vocabularies that are hard to understand or beyond their comprehension level through its algorithm’s own predictions. Defit uses text overlay design to show definitions of unknown vocabularies directly on top of the words. As a result, a smooth reading experience that promotes vocabulary learning is guaranteed. Users can thus read without any interruption or relocation.",
     "techStack": [],
     "pictures": ["./Images/Projects/DF_1.png"],
@@ -80,7 +77,7 @@
   },
   "HousingDashboard": {
     "title": "Housing Dashboard",
-    "timeline": "To Be Decided",
+    "timeline": "",
     "description": "Housing Dashboard is a comprehensive tool that provides a clear overview of the housing market, including housing stock, average rent prices, and key metrics. With a visually appealing and intuitive format, the dashboard offers valuable insights into the current state of the housing market, including market trends and fluctuations in rent prices over time. A demo of the website is available at https://housingdashboard.org/. The tool provides valuable information to help users make informed decisions in the housing market.",
     "techStack": [
       "JavaScript",
