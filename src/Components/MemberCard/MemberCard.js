@@ -7,7 +7,7 @@ import ButtonMailto from './ButtonMailto'
 const member = MemberJson[0]
 const name = member['英文全名']
 const role = member['职位']
-const linkedin = ''
+const linkedin = member['LinkedIn(optional)']
 const git = ''
 const email = member['邮箱']
 const test_img = ''
@@ -54,7 +54,12 @@ function MemberCard() {
       <div className='memberCard'>
         <div className='profile-card'>
           <div className='card-top'>
-            <img src={image} alt='member image' className='member-image' />
+            <img
+              src={image}
+              alt='member image'
+              id='member-image'
+              className='member-image'
+            />
           </div>
           <div className='card-bottom'>
             <div className='member-name'>{name}</div>
