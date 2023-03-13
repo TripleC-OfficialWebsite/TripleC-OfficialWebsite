@@ -1,0 +1,6 @@
+#departmentContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-family: "Fira Sans", sans-serif;
+}

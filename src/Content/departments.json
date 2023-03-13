@@ -1,0 +1,46 @@
+{
+  "President": {
+    "title": "President",
+    "description": ""
+  },
+  "VP": {
+    "title": "Vice Presidents",
+    "description": ""
+  },
+  "PM": {
+    "title": "Product Manager",
+    "description": ""
+  },
+  "SWE": {
+    "title": "Software Engineer",
+    "description": ""
+  },
+  "DSC": {
+    "title": "Data Scientist",
+    "description": ""
+  },
+  "PD": {
+    "title": "Product Designer",
+    "description": ""
+  },
+  "HR": {
+    "title": "Human Resource",
+    "description": ""
+  },
+  "BD": {
+    "title": "Business Development",
+    "description": ""
+  },
+  "VIS": {
+    "title": "Visual Art",
+    "description": ""
+  },
+  "PR": {
+    "title": "Public Relation",
+    "description": ""
+  },
+  "OP": {
+    "title": "Operation",
+    "description": ""
+  }
+}

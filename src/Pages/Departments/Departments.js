@@ -1,5 +1,14 @@
+import "./Department.css";
+import DepartmentContent from "./DepartmentContent";
+import DepartmentMenu from "./DepartmentMenu";
+
 const Departments = () => {
-  return <div>Departments</div>;
+  return (
+    <div id="departmentContainer">
+      <DepartmentMenu />
+      <DepartmentContent />
+    </div>
+  );
 };
 
 export default Departments;
