@@ -34,7 +34,9 @@ function App(props) {
         <div id="container_2">
             <div className="titles">
               <div className="project_name">{project.title}</div>
-              <div className="time_line">Timeline - {project.timeline}</div>
+              <div className="time_line">Timeline - 
+                <img src={project.timeline} className="time_line_img"></img>
+              </div>
               <div className="description">Descriptions:</div>
               <div className="description">{project.description}</div>
               <div className="team">Team</div>
