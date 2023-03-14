@@ -34,7 +34,7 @@ function App(props) {
         <div id="container_2">
             <div className="titles">
               <div className="project_name">{project.title}</div>
-              <div className="time_line">Timeline - 
+              <div className="time_line">Timeline 
                 <img src={project.timeline} className="time_line_img"></img>
               </div>
               <div className="description">Descriptions:</div>
@@ -65,8 +65,8 @@ function App(props) {
 
               <div className="links">
                 <div className="subtitle_pro">Links</div>
-                <div>Demo: {projects.GoalTritons.links.demo}</div>
-                <div>Contact: {projects.GoalTritons.links.contact}</div>
+                <div>Demo: {project.links.demo}</div>
+                <div>Contact: {project.links.contact}</div>
               </div>
 
               <div className="padding"></div>
