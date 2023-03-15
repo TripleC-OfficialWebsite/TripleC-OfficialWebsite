@@ -7,7 +7,7 @@ import "./Projects.css";
 
 function App(props) {
   const project = projects[props.proName];
-  const expression = '$[?(@.所属项目组 == $(props.proName))]';
+  // const expression = `$..[?(@.所属项目组 == "${props.proName}")]`;
   const pictures = project.pictures;
   const techStack = project.techStack;
   // const memberJSON = member;
@@ -24,9 +24,10 @@ function App(props) {
   //     }
   // ];
   // const num = 2019;
-  // const newerCars = jsonPath.query(data, '$[?(@.year == $(num))]');
+  // const newerCars = jsonPath.query(data, `$..[?(@.year == "${num}")]`);
   // Output: [{"make": "Honda", "model": "Accord", "year": 2019}]
-  const memInfo = jsonPath.query(member, expression);
+  // const memInfo = jsonPath.query(member, `$..[?(@.所属项目组 == "Label")]`);
+  const memInfo = jsonPath.query(member, `$..[?(@.所属项目组 == "${props.proName}")]`);
 
   return (
     <div>
@@ -40,6 +41,7 @@ function App(props) {
               <div className="description">Descriptions:</div>
               <div className="description">{project.description}</div>
               <div className="team">Team</div>
+              <div>{memInfo.length}</div> {/* number of members */}
               <div className="member_card"><MemberCard memInfo={memInfo}/></div>
             </div>
         </div>
