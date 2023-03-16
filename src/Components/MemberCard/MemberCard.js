@@ -4,14 +4,6 @@ import './MemberCard.css'
 import MemberJson from '../../Content/members.json'
 import ButtonMailto from './ButtonMailto'
 
-const member = MemberJson[0]
-const name = member['英文全名']
-const role = member['职位']
-const linkedin = member['LinkedIn(optional)']
-const git = ''
-const email = member['邮箱']
-const test_img = ''
-
 function RandomImage() {
   const [randomImagePath, setRandomImagePath] = useState('')
 
@@ -40,7 +32,17 @@ function RandomImage() {
   return randomImagePath
 }
 
-function MemberCard() {
+function MemberCard(props) {
+  console.log('2')
+  console.log(props)
+  // const member = props.single_member
+  const name = ''
+  const role = ''
+  const linkedin = ''
+  const git = ''
+  const email = ''
+  const test_img =
+    'https://pbs.twimg.com/profile_images/1485050791488483328/UNJ05AV8_400x400.jpg'
   let image
   if (test_img === '') {
     image = RandomImage()
