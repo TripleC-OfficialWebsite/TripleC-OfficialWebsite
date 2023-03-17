@@ -56,6 +56,9 @@
     line-height: 2rem;
     font-weight: 600;
 }
+.time_line_img{
+    width: 100%;
+}
 
 .description{
     font-family: "Fira Sans", sans-serif;
