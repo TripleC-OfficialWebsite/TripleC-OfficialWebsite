@@ -1,0 +1,16 @@
+#departmentMenuContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 10px;
+  text-align: center;
+  background-color: #181818;
+}
+
+.link{
+  padding: 0.5rem 0;
+}
+
+a {
+  color: white;
+}

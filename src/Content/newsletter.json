@@ -1,16 +1,47 @@
 {
-  "title": "",
-  "subtitle": "",
+  "title": "Newsletters",
+  "subtitle": "\"We do have awesome writers in this coding community.\"",
   "newsletters": [
     {
-      "title": "",
+      "title": "Fall Triple C Weekly Updates week6",
+      "link": "",
+      "date": "2/27/2023"
+    },
+    {
+      "title": "Fall Triple C Weekly Updates week5",
       "link": "",
       "date": ""
     },
     {
-      "title": "",
+      "title": "Fall Triple C Weekly Updates week6",
       "link": "",
-      "date": ""
+      "date": "2/27/2023"
+    },
+    {
+      "title": "Fall Triple C Weekly Updates week6",
+      "link": "",
+      "date": "2/27/2023"
+    },
+    {
+      "title": "Fall Triple C Weekly Updates week9",
+      "link": "",
+      "date": "2/27/2023"
+    },
+    {
+      "title": "Fall Triple C Weekly",
+      "link": "",
+      "date": "2/27/2023"
+    },
+    {
+      "title": "Fall Triple C Weekly",
+      "link": "",
+      "date": "2/27/2023"
+    },
+    {
+      "title": "Fall Triple C Weekly",
+      "link": "",
+      "date": "2/27/2023"
     }
+    
   ]
 }
