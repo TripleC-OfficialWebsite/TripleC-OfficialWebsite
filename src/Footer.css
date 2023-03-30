@@ -7,7 +7,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 4rem;
+  height: 5rem;
 }
 
 .socialIcon {
@@ -49,6 +49,6 @@
   }
   .blockthree {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 }

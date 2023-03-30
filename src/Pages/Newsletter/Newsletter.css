@@ -7,22 +7,16 @@
   max-width: 750px;
 }
 
-.title {
-  color: white;
-  font-family: "Fira Sans", sans-serif;
-  word-break: break-word;
-  font-weight: 600;
-  font-size: 2rem !important;
-  font-stretch: extra-expanded;
-  padding-top: 3rem;
-}
-  
-.subtitle {
-  color: gray;
-  font-family: "Fira Sans", sans-serif;
-  word-break: break-word;
-  font-weight: 400;
-  line-height: 2rem;
+@media screen and (max-width: 960px) {
+  .block {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #newsletter {
+    text-align: center;
+    margin-bottom: 0;
+  }
 }
 
 .block {
@@ -54,4 +48,20 @@
   font-size: 18px !important;
   font-stretch: extra-expanded;
   padding-top: 5px;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#root .pag {
+  width: auto;
+  margin-right: 3%;
+}
+
+#newsletter {
+  text-align: center;
+  margin-bottom: 2rem;
 }

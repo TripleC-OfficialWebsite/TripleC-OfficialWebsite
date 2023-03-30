@@ -1,7 +1,7 @@
 #logo-animation {
   display: inline-block;
   filter: drop-shadow(-25px 25px 25px rgba(26, 58, 70, 0.7));
-  z-index: 3;
+  z-index: 0;
   width: 20%;
   margin: 10%;
 }

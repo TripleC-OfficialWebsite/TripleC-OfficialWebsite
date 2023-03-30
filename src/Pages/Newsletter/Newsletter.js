@@ -2,23 +2,29 @@ import React, { useState } from "react";
 import newsletterJson from "../../Content/newsletter.json";
 import "./Newsletter.css";
 
-const itemsPerPage = 5;
+const itemsPerPage = 6;
+const newsletters = newsletterJson.newsletters;
 
 const NewsletterPage = () => {
-  const totalPages = Math.ceil(
-    newsletterJson.newsletters.length / itemsPerPage
-  );
+  const totalPages = Math.ceil(newsletters.length / itemsPerPage);
 
   const [currentPage, setCurrentPage] = useState(1);
+  const [currentNewsletters, setCurrentNewsletters] = useState(
+    newsletters.slice(
+      (currentPage - 1) * itemsPerPage,
+      Math.min(currentPage * itemsPerPage, newsletters.length)
+    )
+  );
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
+    setCurrentNewsletters(
+      newsletters.slice(
+        (pageNumber - 1) * itemsPerPage,
+        Math.min(pageNumber * itemsPerPage, newsletters.length)
+      )
+    );
   };
-
-  const currentNewsletters = newsletterJson.newsletters.slice(
-    (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
-  );
 
   return (
     <div id="newsletterPage">
@@ -49,7 +55,12 @@ const Newsletter = () => {
 const Block = ({ item }) => {
   return (
     <div className="block">
-      <a href={item.link} className="blocktitle">
+      <a
+        href={item.link}
+        target="_blank"
+        rel="noreferrer"
+        className="blocktitle"
+      >
         {item.title}
       </a>
       <h2 className="blockdate">{item.date}</h2>
@@ -60,15 +71,33 @@ const Block = ({ item }) => {
 const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   return (
     <div className="pagination">
+      {currentPage > 1 && (
+        <button
+          key={"back"}
+          className="btn btn-outline-light pag"
+          onClick={() => onPageChange(currentPage - 1)}
+        >
+          {"<"}
+        </button>
+      )}
       {[...Array(totalPages)].map((_, index) => (
         <button
           key={index}
-          className={index + 1 === currentPage ? "active" : ""}
+          className="btn btn-outline-light pag"
           onClick={() => onPageChange(index + 1)}
         >
           {index + 1}
         </button>
       ))}
+      {currentPage < totalPages && (
+        <button
+          key={"next"}
+          className="btn btn-outline-light pag"
+          onClick={() => onPageChange(currentPage + 1)}
+        >
+          {">"}
+        </button>
+      )}
     </div>
   );
 };

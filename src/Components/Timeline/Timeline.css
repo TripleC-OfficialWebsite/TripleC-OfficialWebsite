@@ -32,7 +32,7 @@ ul {
   height: 35px;
   background-color: #1976d2;
   border-radius: 100%;
-  z-index: 2;
+  z-index: 0;
   border: 2px gray solid;
   position: relative;
   left: 0.75px;

@@ -38,16 +38,16 @@
     "subtitle": "\"Behold, their names are in gold!\"",
     "sections": [
       {
-        "title": "Kaggle competition",
-        "imagePath": "./Images/featured-project/project1.jpg",
-        "description": "Lose john poor same it case do year we. Full how way even the sigh. Extremely nor furniture fat questions now provision incommode preserved. Our side fail find like now. Discovered travelling for insensible partiality unpleasing impossible she. Sudden up my excuse to suffer ladies though or. Bachelor possible marianne directly confined relation as on he.",
-        "link": ""
+        "title": "Defit",
+        "imagePath": "./Images/Projects/DF_1.png",
+        "description": "Defit is an English reading/learning tool that can translate long paragraphs based on the user’s English level. The levels that are currently available are high school, CET 4, CET6, TOEFL, and GRE. Users can select their reading proficiency level, and Defit will translate the vocabularies that are hard to understand or beyond their comprehension level through its algorithm’s own predictions. Defit uses text overlay design to show definitions of unknown vocabularies directly on top of the words. As a result, a smooth reading experience that promotes vocabulary learning is guaranteed. Users can thus read without any interruption or relocation.",
+        "link": "projects/Defit"
       },
       {
-        "title": "Kaggle competition 2",
-        "imagePath": "./Images/featured-project/project1.jpg",
-        "description": "Be me shall purse my ought times. Joy years doors all would again rooms these.",
-        "link": ""
+        "title": "Goal Tritons",
+        "imagePath": "./Images/Projects/GT_1.png",
+        "description": "Goal Tritons is a non-profit B to C product aimed at supporting UCSD Undergraduates, including F-1 International Students, in their career-finding process. It is a responsive informational website that will provide undergraduates a smooth experience in developing professional path and approaching career goal.",
+        "link": "projects/GoalTritons"
       }
     ]
   },

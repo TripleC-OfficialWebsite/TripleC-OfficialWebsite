@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav">
       <Link to={``} className="navbar-brand brand">
-        <img src={"./Images/logo.png"} width="30" height="30" alt="" />
+        <img src={"./Images/logo.png"} width="30" height="30" alt="das" />
         Triple C
       </Link>
       <button
@@ -32,14 +32,38 @@ const Navbar = () => {
           </li>
           <li className="nav-item dropdown">
             <div className="ProDropDown">
-              <button className="btn btn-dark tab rect dropdown-toggle" type="button" data-toggle="dropdown">PROJECTS</button>
+              <button
+                className="btn btn-dark tab rect dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+              >
+                PROJECTS
+              </button>
               <ul className="dropdown-menu">
-                <li value={ProJson.Label.title}><Link to={`projects/Label`}>{ProJson.Label.title}</Link></li>
-                <li value={ProJson.MapSocial.title}><Link to={`projects/MapSocial`}>{ProJson.MapSocial.title}</Link></li>
-                <li value={ProJson.GoalTritons.title}><Link to={`projects/GoalTritons`}>{ProJson.GoalTritons.title}</Link></li>
-                <li value={ProJson.WeRide.title}><Link to={`projects/WeRide`}>{ProJson.WeRide.title}</Link></li>
-                <li value={ProJson.Defit.title}><Link to={`projects/Defit`}>{ProJson.Defit.title}</Link></li>
-                <li value={ProJson.HousingDashboard.title}><Link to={`projects/HousingDashboard`}>{ProJson.HousingDashboard.title}</Link></li>
+                <li value={ProJson.Label.title}>
+                  <Link to={`projects/Label`}>{ProJson.Label.title}</Link>
+                </li>
+                <li value={ProJson.MapSocial.title}>
+                  <Link to={`projects/MapSocial`}>
+                    {ProJson.MapSocial.title}
+                  </Link>
+                </li>
+                <li value={ProJson.GoalTritons.title}>
+                  <Link to={`projects/GoalTritons`}>
+                    {ProJson.GoalTritons.title}
+                  </Link>
+                </li>
+                <li value={ProJson.WeRide.title}>
+                  <Link to={`projects/WeRide`}>{ProJson.WeRide.title}</Link>
+                </li>
+                <li value={ProJson.Defit.title}>
+                  <Link to={`projects/Defit`}>{ProJson.Defit.title}</Link>
+                </li>
+                <li value={ProJson.HousingDashboard.title}>
+                  <Link to={`projects/HousingDashboard`}>
+                    {ProJson.HousingDashboard.title}
+                  </Link>
+                </li>
               </ul>
             </div>
             {/* <Link to={`projects`} className="btn btn-dark tab rect">
@@ -52,7 +76,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item tab">
-            <ContactUs/>
+            <ContactUs />
           </li>
         </ul>
       </div>
