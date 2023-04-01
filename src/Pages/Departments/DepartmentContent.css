@@ -11,7 +11,15 @@
 }
 
 .departmentDes {
-  padding: 0 6rem;
+  padding: 2rem 8rem;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 960px) {
+  .departmentDes {
+    font-size: 1rem;
+    padding: 2rem 4rem;
+  }
 }
 
 @media screen and (max-width: 664px) {
