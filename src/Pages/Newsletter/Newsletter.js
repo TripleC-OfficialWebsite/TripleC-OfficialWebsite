@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import newsletterJson from "../../Content/newsletter.json";
 import "./Newsletter.css";
 
-const itemsPerPage = 6;
+const itemsPerPage = 7;
 const newsletters = newsletterJson.newsletters;
 
 const NewsletterPage = () => {

@@ -36,11 +36,11 @@
   z-index: 0;
 }
 
-.navbar{
+.navbar {
   z-index: 9999;
 }
 
-.dropdown-menu{
+.dropdown-menu {
   background-color: #272727;
   flex-direction: column;
   padding-top: 5%;
@@ -49,10 +49,14 @@
 .dropdown-menu li {
   padding-top: 6%;
 }
-.dropdown-menu li a{
+.dropdown-menu li a {
   color: white;
   font-family: "Fira Sans", sans-serif;
   align-items: left;
   padding-left: 6%;
   font-weight: 450;
+}
+
+.projectLink:hover {
+  text-decoration: none;
 }

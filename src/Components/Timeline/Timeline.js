@@ -22,11 +22,9 @@ function Timeline() {
 
   return (
     <div className="timelineTop">
-      <div>
-        <div className="text-center">
-          <h1 className="title">{timelineJson.timeline.title}</h1>
-          <h2 className="subtitle">{timelineJson.timeline.subtitle}</h2>
-        </div>
+      <div className="text-center">
+        <h1 className="title">{timelineJson.timeline.title}</h1>
+        <h2 className="subtitle">{timelineJson.timeline.subtitle}</h2>
       </div>
       <div className="timeline">
         <br></br>

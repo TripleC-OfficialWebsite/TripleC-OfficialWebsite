@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav fixed-top">
       <Link to={``} className="navbar-brand brand">
         <img src={"./Images/logo.png"} width="30" height="30" alt="das" />
         Triple C
@@ -41,26 +41,35 @@ const Navbar = () => {
               </button>
               <ul className="dropdown-menu">
                 <li value={ProJson.Label.title}>
-                  <Link to={`projects/Label`}>{ProJson.Label.title}</Link>
+                  <Link to={`projects/Label`} className="projectLink">
+                    {ProJson.Label.title}
+                  </Link>
                 </li>
                 <li value={ProJson.MapSocial.title}>
-                  <Link to={`projects/MapSocial`}>
+                  <Link to={`projects/MapSocial`} className="projectLink">
                     {ProJson.MapSocial.title}
                   </Link>
                 </li>
                 <li value={ProJson.GoalTritons.title}>
-                  <Link to={`projects/GoalTritons`}>
+                  <Link to={`projects/GoalTritons`} className="projectLink">
                     {ProJson.GoalTritons.title}
                   </Link>
                 </li>
                 <li value={ProJson.WeRide.title}>
-                  <Link to={`projects/WeRide`}>{ProJson.WeRide.title}</Link>
+                  <Link to={`projects/WeRide`} className="projectLink">
+                    {ProJson.WeRide.title}
+                  </Link>
                 </li>
                 <li value={ProJson.Defit.title}>
-                  <Link to={`projects/Defit`}>{ProJson.Defit.title}</Link>
+                  <Link to={`projects/Defit`} className="projectLink">
+                    {ProJson.Defit.title}
+                  </Link>
                 </li>
                 <li value={ProJson.HousingDashboard.title}>
-                  <Link to={`projects/HousingDashboard`}>
+                  <Link
+                    to={`projects/HousingDashboard`}
+                    className="projectLink"
+                  >
                     {ProJson.HousingDashboard.title}
                   </Link>
                 </li>

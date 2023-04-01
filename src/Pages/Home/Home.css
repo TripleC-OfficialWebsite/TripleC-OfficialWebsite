@@ -57,5 +57,6 @@
   }
   .subtitle {
     line-height: 1.25rem;
+    padding: 0 0.5rem;
   }
 }

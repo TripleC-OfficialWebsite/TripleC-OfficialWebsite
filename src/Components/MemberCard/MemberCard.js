@@ -5,52 +5,13 @@ import "./MemberCard.css";
 import MemberJson from "../../Content/members.json";
 import ButtonMailto from "./ButtonMailto";
 
-function RandomImage() {
-  const [randomImagePath, setRandomImagePath] = useState("");
-
-  useEffect(() => {
-    const imagePaths = [
-      "avatar-d1.png",
-      "avatar-d2.png",
-      "avatar-d3.png",
-      "avatar-d4.png",
-      "avatar-d5.png",
-      "avatar-d6.png",
-      "avatar-d7.png",
-      "avatar-d8.png",
-      "avatar-d9.png",
-      "avatar-d10.png",
-      "avatar-d11.png",
-      "avatar-d12.png",
-      "avatar-d13.png",
-      "avatar-d14.png",
-    ];
-    const randomIndex = Math.floor(Math.random() * imagePaths.length);
-    const randomPath = `Images/Avatars/${imagePaths[randomIndex]}`;
-    setRandomImagePath(randomPath);
-  }, []);
-
-  return randomImagePath;
-}
-
 function MemberCard(props) {
-  // console.log("2");
-  // console.log(props);
-  // const member = props.single_member
-  const name = "";
-  const role = "";
-  const linkedin = "";
-  const git = "";
-  const email = "";
-  const test_img =
-    "https://pbs.twimg.com/profile_images/1485050791488483328/UNJ05AV8_400x400.jpg";
-  let image;
-  if (test_img === "") {
-    image = RandomImage();
-    // console.log(image);
-  } else {
-    image = test_img;
-  }
+  const name = props.member.英文全名;
+  const role = props.member.职位;
+  const linkedin = props.member["LinkedIn(optional)"];
+  const git = props.member["Github(optional)"];
+  const email = props.member["邮箱"];
+  const image = `./Images/Members/${props.member["照片(optional)"]}`;
 
   return (
     <div className="parent-card">
@@ -58,7 +19,13 @@ function MemberCard(props) {
         <div className="profile-card">
           <div className="card-top">
             <img
-              src={image}
+              src={
+                props.member["照片(optional)"]
+                  ? image
+                  : `Images/Avatars/avatar-d${
+                      Math.floor(Math.random() * 14) + 1
+                    }.png`
+              }
               alt="member"
               id="member-image"
               className="member-image"
@@ -72,7 +39,12 @@ function MemberCard(props) {
       </div>
       <div className="contact-card">
         {git ? (
-          <a href={git} target="_blank" rel="noreferrer">
+          <a
+            href={git}
+            className="contactLink"
+            target="_blank"
+            rel="noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -93,7 +65,12 @@ function MemberCard(props) {
           </svg>
         )}
         {linkedin ? (
-          <a href={linkedin} target="_blank" rel="noreferrer">
+          <a
+            href={linkedin}
+            className="contactLink"
+            target="_blank"
+            rel="noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -180,4 +157,4 @@ function MemberCard(props) {
 //   )
 // }
 
-export default MemberCard;
+export default React.memo(MemberCard);
