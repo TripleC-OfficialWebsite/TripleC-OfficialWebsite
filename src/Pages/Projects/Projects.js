@@ -35,26 +35,9 @@ function App(props) {
 
   return (
     <div>
-      <div class="row">
-        <div id="container_2">
-          <div className="titles">
-            <div className="project_name">{project.title}</div>
-            <div className="time_line">
-              Timeline
-              <img src={project.timeline} className="time_line_img"></img>
-            </div>
-            <div className="description">Descriptions:</div>
-            <div className="description">{project.description}</div>
-            <div className="team">Team</div>
-            <div>{memInfo.length}</div> {/* number of members */}
-            {memInfo.map((member) => (
-              <div className="member_card">
-                <MemberCard member={member} />
-              </div>
-            ))}
-          </div>
-        </div>
-        <div class="column_pro">
+      <div class="col">
+        <div className="titles">
+          <div className="project_name">{project.title}</div>
           <div className="img-container">
             <ul>
               {pictures.map((picture) => (
@@ -68,29 +51,51 @@ function App(props) {
               ))}
             </ul>
           </div>
-          <div className="titles">
-            <div className="tech_stack">
-              <div className="subtitle_pro">Tech Stack</div>
-              <ul>
-                {techStack.map((tech) => (
-                  <li key={tech.id}>{tech}</li>
-                ))}
-              </ul>
+          {project.timeline && (
+            <div className="time_line">
+              <div className="subtitle_pro">Timeline</div>
+              <img
+                src={project.timeline}
+                className="time_line_img"
+                alt="projImg"
+              ></img>
             </div>
+          )}
 
-            <div className="padding"></div>
+          <div className="subtitle_pro">Descriptions:</div>
+          <div className="description">{project.description}</div>
+          <div className="subtitle_pro">Team</div>
+          <div className="team">
+            {memInfo.map((member) => (
+              <div className="member_card">
+                <MemberCard member={member} />
+              </div>
+            ))}
+          </div>
+        </div>
 
-            <div className="links">
-              <div className="subtitle_pro">Links</div>
-              <div>Demo: {project.links.demo}</div>
-              <div>Contact: {project.links.contact}</div>
-            </div>
+        <div className="titles">
+          <div className="tech_stack">
+            <div className="subtitle_pro">Tech Stack</div>
+            <ul>
+              {techStack.map((tech) => (
+                <li key={tech.id}>{tech}</li>
+              ))}
+            </ul>
+          </div>
 
-            <div className="padding"></div>
+          <div className="padding"></div>
+
+          <div className="links">
+            <div className="subtitle_pro">Links</div>
+            <div>Demo: {project.links.demo}</div>
+            <div>Contact: {project.links.contact}</div>
           </div>
 
           <div className="padding"></div>
         </div>
+
+        <div className="padding"></div>
       </div>
     </div>
   );
