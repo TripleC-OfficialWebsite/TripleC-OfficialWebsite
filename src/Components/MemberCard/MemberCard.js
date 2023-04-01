@@ -8,6 +8,7 @@ import ButtonMailto from "./ButtonMailto";
 function MemberCard(props) {
   const name = props.member.英文全名;
   const role = props.member.职位;
+  const projectRole = props.member.项目组具体职位;
   const linkedin = props.member["LinkedIn(optional)"];
   const git = props.member["Github(optional)"];
   const email = props.member["邮箱"];
@@ -33,7 +34,9 @@ function MemberCard(props) {
           </div>
           <div className="card-bottom">
             <div className="member-name">{name}</div>
-            <div className="member-role">{role}</div>
+            <div className="member-role">
+              {props.page === "department" ? role : projectRole}
+            </div>
           </div>
         </div>
       </div>

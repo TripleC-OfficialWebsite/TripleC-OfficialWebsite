@@ -43,11 +43,10 @@
 .dropdown-menu {
   background-color: #272727;
   flex-direction: column;
-  padding-top: 5%;
 }
 
 .dropdown-menu li {
-  padding-top: 6%;
+  padding: 2.5% 0;
 }
 .dropdown-menu li a {
   color: white;

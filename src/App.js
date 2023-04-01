@@ -49,6 +49,10 @@ function App() {
           path="/projects/HousingDashboard"
           element={<Projects proName="HousingDashboard" />}
         />
+        <Route
+          path="/projects/CutiePet"
+          element={<Projects proName="CutiePet" />}
+        />
         <Route path="/departments" element={<Departments />} />
       </Route>
     )

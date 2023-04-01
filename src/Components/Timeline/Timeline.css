@@ -17,9 +17,7 @@
   width: 80%;
   font-family: "Fira Sans", sans-serif;
 }
-ul {
-  padding: 0px;
-}
+
 .timeline ul li {
   margin-bottom: 30px;
   list-style-type: none;

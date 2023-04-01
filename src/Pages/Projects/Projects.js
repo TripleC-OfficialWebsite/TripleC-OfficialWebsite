@@ -38,10 +38,12 @@ function App(props) {
       <div class="col">
         <div className="titles">
           <div className="project_name">{project.title}</div>
+          {project.slogan && <div className="slogan">{project.slogan}</div>}
+
           <div className="img-container">
             <ul>
               {pictures.map((picture) => (
-                <li key={picture.id}>
+                <li className="imgItem" key={picture.id}>
                   <img
                     src={picture}
                     alt={props.proName}
@@ -68,7 +70,7 @@ function App(props) {
           <div className="team">
             {memInfo.map((member) => (
               <div className="member_card">
-                <MemberCard member={member} />
+                <MemberCard member={member} page="project" />
               </div>
             ))}
           </div>
@@ -86,11 +88,34 @@ function App(props) {
 
           <div className="padding"></div>
 
-          <div className="links">
-            <div className="subtitle_pro">Links</div>
-            <div>Demo: {project.links.demo}</div>
-            <div>Contact: {project.links.contact}</div>
-          </div>
+          {(project.links.demo ||
+            project.links.repo ||
+            project.links.contact) && (
+            <div className="links">
+              <div className="subtitle_pro">Links</div>
+              {project.links.demo && (
+                <div>
+                  <strong>Demo</strong>:{" "}
+                  <a target="_blank" rel="noreferrer" href={project.links.demo}>
+                    {project.links.demo}
+                  </a>
+                </div>
+              )}
+              {project.links.repo && (
+                <div>
+                  <strong>Repo</strong>:{" "}
+                  <a target="_blank" rel="noreferrer" href={project.links.repo}>
+                    {project.links.repo}
+                  </a>
+                </div>
+              )}
+              {project.links.contact && (
+                <div>
+                  <strong>Contact</strong>: {project.links.contact}
+                </div>
+              )}
+            </div>
+          )}
 
           <div className="padding"></div>
         </div>

@@ -73,6 +73,11 @@ const Navbar = () => {
                     {ProJson.HousingDashboard.title}
                   </Link>
                 </li>
+                <li value={ProJson.CutiePet.title}>
+                  <Link to={`projects/CutiePet`} className="projectLink">
+                    {ProJson.CutiePet.title}
+                  </Link>
+                </li>
               </ul>
             </div>
             {/* <Link to={`projects`} className="btn btn-dark tab rect">

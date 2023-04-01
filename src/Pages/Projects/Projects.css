@@ -31,33 +31,40 @@
 
 .project_name {
   padding-top: 3rem;
-  padding-bottom: 1rem;
   font-family: "Fira Sans", sans-serif;
   font-weight: 600;
-  font-size: 2.5rem !important;
+  font-size: 2.5rem;
   font-stretch: extra-expanded;
 }
 
-.time_line {
-  font-family: "Fira Sans", sans-serif;
-  padding-bottom: 1rem;
-  font-size: 1.3rem !important;
-  line-height: 2rem;
-  font-weight: 600;
-}
 .time_line_img {
   width: 100%;
 }
 
 .description {
   font-family: "Fira Sans", sans-serif;
-  font-size: 0.95rem !important;
-  font-weight: 200;
+  font-size: 1.1rem;
+  font-weight: 400;
+  word-wrap: break-word;
 }
 
 .team {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.member_card {
+  margin: 0.5rem;
+}
+
+.slogan {
+  color: gray;
+  font-family: "Fira Sans", sans-serif;
+  word-break: break-word;
+  font-weight: 400;
+  font-size: 1.25rem;
 }
 
 .images {
@@ -70,12 +77,30 @@
   flex-direction: column;
 }
 
+.tech_stack li {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+#root .links {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+#root .links a {
+  color: white;
+}
+
 .subtitle_pro {
   font-family: "Fira Sans", sans-serif;
-  font-size: 1.5rem !important;
+  font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
-  padding-top: 2%;
+  padding: 2rem 0;
 }
 
 .padding {
@@ -85,10 +110,8 @@
 .img-container ul {
   list-style-type: none;
   display: flex;
-}
-
-ul {
-  list-style-type: none;
+  flex-direction: row;
+  flex-grow: 1;
 }
 
 .img-container {
@@ -98,12 +121,43 @@ ul {
   width: 100%;
 }
 
-.img-container li {
+.imgItem {
   display: block;
-  padding: 1rem;
+  padding: 2rem;
   padding-left: 0;
+  flex: 1 1 0px;
 }
 
 .image {
   width: 100%;
+}
+
+@media screen and (max-width: 664px) {
+  .project_name {
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+  }
+  .imgItem {
+    padding: 0;
+  }
+  .img-container ul {
+    padding: 0;
+  }
+  .subtitle_pro {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+
+    padding: 1.5rem 0;
+  }
+  .tech_stack li {
+    font-size: 1rem;
+  }
+
+  #root .links {
+    font-size: 1rem;
+  }
+
+  .dropdown-menu a {
+    padding: 0;
+  }
 }
