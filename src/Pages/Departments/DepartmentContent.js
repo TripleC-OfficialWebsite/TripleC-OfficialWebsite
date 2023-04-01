@@ -31,7 +31,9 @@ const DepartmentContent = (props) => {
         return (
           <div className="departments" id={element} key={element}>
             <h3 className="departmentTitle">{DepartmentJson[element].title}</h3>
-            <p className="departmentDes">
+            <p
+              className={DepartmentJson[element].description && "departmentDes"}
+            >
               {DepartmentJson[element].description}
             </p>
             <DepartmentMembers department={element} />
