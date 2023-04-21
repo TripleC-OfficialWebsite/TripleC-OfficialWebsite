@@ -15,19 +15,6 @@
       "照片(optional)": "Daniel_Cao.jpg"
     },
     {
-      "英文全名": "Xingchen Li",
-      "所属部门": "President",
-      "职位": "President",
-      "所属项目组": "Label",
-      "项目组具体职位": "Business Development",
-      "年级": "4th year",
-      "邮箱": "xil082@ucsd.edu",
-      "微信号": "lee423965",
-      "加入时间": "2021 Fall",
-      "LinkedIn(optional)": "https://www.linkedin.com/in/xingchenlijay/",
-      "照片(optional)": "Xingchen_Li.jpg"
-    },
-    {
       "英文全名": "Shuhang Xu",
       "所属部门": "VP",
       "职位": "External Vice President",
@@ -56,7 +43,7 @@
       "英文全名": "Yupeng Sun",
       "所属部门": "SWE",
       "职位": "Member",
-      "所属项目组": "Map Social",
+      "所属项目组": "MapSocial",
       "项目组具体职位": "Developer",
       "年级": "3rd year",
       "邮箱": "yus028@ucsd.edu",
@@ -68,8 +55,8 @@
     },
     {
       "英文全名": "Sandy Wu",
-      "所属部门": "OP",
-      "职位": "OP Chair",
+      "所属部门": "President",
+      "职位": "President",
       "年级": "3rd year",
       "邮箱": "sswu@ucsd.edu",
       "微信号": "syvvu44",
@@ -79,7 +66,7 @@
       "英文全名": "Junhui Wen",
       "所属部门": "SWE",
       "职位": "Member",
-      "所属项目组": "Goal Tritons",
+      "所属项目组": "GoalTritons",
       "项目组具体职位": "Tech Lead",
       "年级": "4th year",
       "邮箱": "j6wen@ucsd.edu",
@@ -304,15 +291,6 @@
       "加入时间": "2023 Winter"
     },
     {
-      "英文全名": "Hongyu Dong",
-      "所属部门": "PD",
-      "职位": "Member",
-      "年级": "2nd year",
-      "邮箱": "h6dong@ucsd.edu",
-      "微信号": "dhy8608DHY",
-      "加入时间": "2023 Winter"
-    },
-    {
       "英文全名": "Esther Jiang",
       "所属部门": "PM",
       "职位": "PM Chair",
@@ -340,19 +318,7 @@
       "所属部门": "SWE",
       "职位": "Member",
       "所属项目组": "WeRide",
-      "项目组具体职位": "Fronted",
-      "年级": "4th year",
-      "邮箱": "shli@ucsd.edu",
-      "微信号": "_PennyroyalTea_",
-      "加入时间": "2021 Fall",
-      "LinkedIn(optional)": "https://www.linkedin.com/in/shaolong-li-0b067a224/"
-    },
-    {
-      "英文全名": "Shaolong Li",
-      "所属部门": "OP",
-      "职位": "Member",
-      "所属项目组": "WeRide",
-      "项目组具体职位": "Fronted",
+      "项目组具体职位": "Frontend",
       "年级": "4th year",
       "邮箱": "shli@ucsd.edu",
       "微信号": "_PennyroyalTea_",
@@ -401,16 +367,6 @@
       "微信号": "color_a7b7e7",
       "加入时间": "2021 Fall",
       "LinkedIn(optional)": "https://www.linkedin.com/in/ruoqingsong/ "
-    },
-    {
-      "英文全名": "Meishi Li",
-      "所属部门": "VP",
-      "职位": "Internal Vice President ",
-      "年级": "4th year ",
-      "邮箱": "mel004@ucsd.edu",
-      "微信号": "meishioneve",
-      "加入时间": "2019 Fall",
-      "LinkedIn(optional)": "https://www.linkedin.com/in/meishi-li"
     },
     {
       "英文全名": "Binyuan Yan",
@@ -467,7 +423,7 @@
     {
       "英文全名": "Helen Yang",
       "所属部门": "HR",
-      "职位": "member",
+      "职位": "HR Chair",
       "年级": "2nd year",
       "邮箱": "huy005@ucsd.edu",
       "微信号": "hy_yhl1211",
@@ -497,19 +453,19 @@
       "职位": "member ",
       "年级": "3rd year ",
       "邮箱": "syh002@ucsd.edu",
-      "微信号": "15012599600",
+      "微信号": 15012599600,
       "加入时间": "2022 fall"
     },
     {
       "英文全名": "Sean Du",
-      "所属部门": "PR",
+      "所属部门": "HR",
       "职位": "member ",
       "年级": "2nd year ",
       "加入时间": "2023 Winter"
     },
     {
       "英文全名": "Sean Du",
-      "所属部门": "HR",
+      "所属部门": "PR",
       "职位": "member ",
       "年级": "2nd year ",
       "加入时间": "2023 Winter"
@@ -524,10 +480,10 @@
     {
       "英文全名": "Yiming Jia",
       "所属部门": "HR",
-      "职位": "HR Chair",
+      "职位": "member",
       "年级": "3rd year",
       "邮箱": "yijia@ucsd.edu",
-      "微信号": "15169028811",
+      "微信号": 15169028811,
       "加入时间": "2022 Winter"
     },
     {
@@ -538,6 +494,203 @@
       "邮箱": "fejiang@ucsd.edu",
       "微信号": "j79502884197",
       "加入时间": "2022Fall"
+    },
+    {
+      "英文全名": "Jason Li",
+      "所属部门": "PM",
+      "职位": "member",
+      "所属项目组": "MapSocial",
+      "项目组具体职位": "Product Mangement, Front End",
+      "年级": "3rd year",
+      "邮箱": "jal042@ucsd.edu",
+      "微信号": "jason091401",
+      "加入时间": "2022 Fall",
+      "LinkedIn(optional)": "https://www.linkedin.com/in/jason-n-li/",
+      "Github(optional)": "https://github.com/jasonli35",
+      "照片(optional)": "jasonli.jpeg"
+    },
+    {
+      "英文全名": "Jason Li",
+      "所属部门": "SWE",
+      "职位": "member",
+      "年级": "3rd year",
+      "邮箱": "jal042@ucsd.edu",
+      "微信号": "jason091401",
+      "加入时间": "2022 Fall",
+      "LinkedIn(optional)": "https://www.linkedin.com/in/jason-n-li/",
+      "Github(optional)": "https://github.com/jasonli35",
+      "照片(optional)": "jasonli.jpeg"
+    },
+    {
+      "英文全名": "Melody Tai",
+      "所属部门": "PD",
+      "职位": "member",
+      "所属项目组": "MapSocial",
+      "项目组具体职位": "Product Designer ",
+      "年级": "2nd",
+      "邮箱": "mtai@ucsd.edu",
+      "微信号": "melody_tai_",
+      "加入时间": "2022 Fall"
+    },
+    {
+      "英文全名": "Shuyi Han",
+      "所属部门": "PD",
+      "职位": "member",
+      "所属项目组": "MapSocial",
+      "项目组具体职位": "Product Designer ",
+      "年级": "3rd",
+      "邮箱": "shh020@ucsd.edu",
+      "微信号": "cici99213",
+      "加入时间": "2022 Fall"
+    },
+    {
+      "英文全名": "Yucheng Huang",
+      "所属部门": "SWE",
+      "职位": "member",
+      "所属项目组": "MapSocial",
+      "项目组具体职位": "Tech Lead",
+      "年级": "4th",
+      "邮箱": "yuchengh0629@gmail.com",
+      "微信号": "hycwx416",
+      "加入时间": "2022 Fall"
+    },
+    {
+      "英文全名": "Alex Liu",
+      "所属部门": "SWE",
+      "职位": "member",
+      "所属项目组": "MapSocial",
+      "项目组具体职位": "backend",
+      "年级": "3rd",
+      "邮箱": "yliu2911@gmail.com",
+      "微信号": "jeffMa2344",
+      "加入时间": "2023 Winter"
+    },
+    {
+      "英文全名": "Hao Wang",
+      "所属部门": "PD",
+      "职位": "member",
+      "所属项目组": "MapSocial",
+      "项目组具体职位": "Product Designer ",
+      "年级": "4th",
+      "邮箱": "haw044@ucsd.edu",
+      "微信号": "zimbabwe",
+      "加入时间": "2023 Winter"
+    },
+    {
+      "英文全名": "Rain Dong",
+      "所属部门": "PD",
+      "职位": "Member",
+      "所属项目组": "MapSocial",
+      "项目组具体职位": "Product Designer ",
+      "年级": "2nd",
+      "邮箱": "h6dong@ucsd.edu",
+      "微信号": "dhy8608DHY",
+      "加入时间": "2023 Winter",
+      "LinkedIn(optional)": "www.linkedin.com/in/raindong\n"
+    },
+    {
+      "英文全名": "Yingqi Cao",
+      "所属部门": "SWE",
+      "职位": "member",
+      "所属项目组": "MapSocial",
+      "项目组具体职位": "backend",
+      "年级": "3rd",
+      "邮箱": "yic033@ucsd.edu",
+      "微信号": "IOEDDk",
+      "加入时间": "2022 Fall"
+    },
+    {
+      "英文全名": "Yijun Luo",
+      "所属部门": "SWE",
+      "职位": "member",
+      "所属项目组": "MapSocial",
+      "项目组具体职位": "front end",
+      "年级": "2nd",
+      "邮箱": "yil176@ucsd.edu",
+      "微信号": "CaptainJackkkkkkkk",
+      "加入时间": "2022 Fall"
+    },
+    {
+      "英文全名": "Lynne Jiang",
+      "所属部门": "PM",
+      "职位": "member",
+      "所属项目组": "MapSocial",
+      "项目组具体职位": "Product Mangement,",
+      "年级": "3rd",
+      "邮箱": "LynneJianggg@gmail.com",
+      "微信号": "Lynne_1717",
+      "加入时间": "2023 Winter"
+    },
+    {
+      "英文全名": "Karen Li",
+      "所属部门": "OP",
+      "职位": "OP Chair",
+      "年级": "1st ",
+      "邮箱": "Kal033@ucsd.edu",
+      "微信号": "karen_bearl",
+      "加入时间": "2022 Fall"
+    },
+    {
+      "英文全名": "Vicky Huang",
+      "所属部门": "PD",
+      "职位": "member",
+      "所属项目组": "WeRide",
+      "项目组具体职位": "Product designer ",
+      "年级": "4th",
+      "邮箱": "vihuang@ucsd.edu",
+      "微信号": "vickyy_huangg",
+      "加入时间": "2022 fall"
+    },
+    {
+      "英文全名": "Joanne Tsai ",
+      "所属部门": "PD ",
+      "职位": "Member ",
+      "所属项目组": "Defit",
+      "项目组具体职位": "Product designer ",
+      "年级": "2nd ",
+      "邮箱": "C3tsai@ucsd.edu ",
+      "微信号": "Joanneme",
+      "加入时间": "2022 Winter ",
+      "LinkedIn(optional)": "https://www.linkedin.com/in/cho-an-tsai-7560831a6",
+      "照片(optional)": "JoanneTsai.jpeg"
+    },
+    {
+      "英文全名": "Daphne Chen ",
+      "所属部门": "OP",
+      "职位": "Member ",
+      "年级": "2nd",
+      "邮箱": "ycchen@ucsd.edu",
+      "加入时间": "2022 Fall"
+    },
+    {
+      "英文全名": "Esther Jiang",
+      "所属部门": "VP",
+      "职位": "Internal Vice President",
+      "年级": "2nd year",
+      "邮箱": "l7jiang@ucsd.edu",
+      "微信号": "jiangluya28",
+      "加入时间": "2022 Spring",
+      "LinkedIn(optional)": "https://www.linkedin.com/in/esther-jiang/",
+      "照片(optional)": "EstherJiang.jpeg"
+    },
+    {
+      "英文全名": "Shaolong Li",
+      "所属部门": "OP",
+      "职位": "Member",
+      "年级": "4th year",
+      "邮箱": "shli@ucsd.edu",
+      "微信号": "_PennyroyalTea_",
+      "加入时间": "2021 Fall",
+      "LinkedIn(optional)": "https://www.linkedin.com/in/shaolong-li-0b067a224/"
+    },
+    {
+      "英文全名": "Yuxiao Qu",
+      "所属部门": "VIS",
+      "职位": "VIS chair",
+      "年级": "4th year",
+      "邮箱": "y1qu@ucsd.edu",
+      "微信号": "quyuxiao1216",
+      "加入时间": "2021 fall"
     }
   ]
 }

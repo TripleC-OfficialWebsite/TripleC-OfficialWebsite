@@ -29,7 +29,7 @@ function App(props) {
   // const memInfo = jsonPath.query(member, `$..[?(@.所属项目组 == "Label")]`);
   const memInfo = jsonPath.query(
     member,
-    `$..[?(@.所属项目组 == "${props.proName}")]`
+    `$..[?(/${props.proName}/.test(@.所属项目组))]`
   );
   console.log(memInfo);
 
