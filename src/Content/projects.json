@@ -1,5 +1,6 @@
 {
   "Label": {
+    "type": "past",
     "title": "Label Cluster",
     "slogan": "",
     "timeline": "",
@@ -19,6 +20,7 @@
     }
   },
   "MapSocial": {
+    "type": "active",
     "title": "Map Social",
     "slogan": "",
     "timeline": "./Images/Projects/MS_timeline.png",
@@ -42,6 +44,7 @@
   },
   "GoalTritons": {
     "title": "Goal Tritons",
+    "type": "active",
     "slogan": "",
     "timeline": "",
     "description": "Goal Tritons is a non-profit B to C product aimed at supporting UCSD Undergraduates, including F-1 International Students, in their career-finding process. It is a responsive informational website that will provide undergraduates a smooth experience in developing professional path and approaching career goal.",
@@ -61,6 +64,7 @@
     }
   },
   "WeRide": {
+    "type": "active",
     "title": "WeRide",
     "slogan": "",
     "timeline": "",
@@ -74,6 +78,7 @@
     }
   },
   "Defit": {
+    "type": "past",
     "title": "Defit",
     "slogan": "",
     "timeline": "",
@@ -93,6 +98,7 @@
     }
   },
   "HousingDashboard": {
+    "type": "past",
     "title": "Housing Dashboard",
     "slogan": "",
     "timeline": "",
@@ -112,6 +118,7 @@
     }
   },
   "CutiePet": {
+    "type": "past",
     "title": "CutiePet",
     "slogan": "Meet Cute Pets Online",
     "timeline": "",
@@ -120,6 +127,20 @@
     "pictures": ["./Images/Projects/CP_1.png", "./Images/Projects/CP_2.png"],
     "links": {
       "demo": "https://drive.google.com/file/d/1R32hfrYbVEv0JpD0f_Y8gSlfmD4z5X63/view?usp=sharing",
+      "repo": "",
+      "contact": ""
+    }
+  },
+  "NutriPlan": {
+    "type": "active",
+    "title": "NutriPlan",
+    "slogan": "",
+    "timeline": "",
+    "description": "NutriPlan is a comprehensive online platform designed to assist individuals, particularly students, who face difficulties in managing their health and nutrition goals. The platform provides personalized nutrition plans, tailored to users' unique goals, dietary preferences, and health conditions, and includes an interactive meal planner that enables users to plan their meals for the week, complete with user-friendly recipes. A robust database of both healthy recipes and extensive food nutritional data provides users with an easy reference for meal choices that align with their dietary needs and preferences. Key features of the website include a food logging system to track progress, along with a daily nutrient intake tracker. To ensure users stay engaged and committed to their health goals, the platform also sends out regular reminders and notifications for food logging, timed ideally around meal times or at regular intervals throughout the day.",
+    "techStack": ["React.js", "Bootstrap", "Tailwind", "Node", "Express", "Python", "Scikit-learn", "Auth0", "Git"],
+    "pictures": ["./Images/Projects/NP_1.png", "./Images/Projects/NP_2.png"],
+    "links": {
+      "demo": "",
       "repo": "",
       "contact": ""
     }

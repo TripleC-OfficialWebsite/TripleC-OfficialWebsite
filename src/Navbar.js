@@ -40,49 +40,32 @@ const Navbar = () => {
                 PROJECTS
               </button>
               <ul className="dropdown-menu">
-                <li value={ProJson.Label.title}>
-                  <Link to={`projects/Label`} className="projectLink">
-                    {ProJson.Label.title}
-                  </Link>
-                </li>
-                <li value={ProJson.MapSocial.title}>
-                  <Link to={`projects/MapSocial`} className="projectLink">
-                    {ProJson.MapSocial.title}
-                  </Link>
-                </li>
-                <li value={ProJson.GoalTritons.title}>
-                  <Link to={`projects/GoalTritons`} className="projectLink">
-                    {ProJson.GoalTritons.title}
-                  </Link>
-                </li>
-                <li value={ProJson.WeRide.title}>
-                  <Link to={`projects/WeRide`} className="projectLink">
-                    {ProJson.WeRide.title}
-                  </Link>
-                </li>
-                <li value={ProJson.Defit.title}>
-                  <Link to={`projects/Defit`} className="projectLink">
-                    {ProJson.Defit.title}
-                  </Link>
-                </li>
-                <li value={ProJson.HousingDashboard.title}>
-                  <Link
-                    to={`projects/HousingDashboard`}
-                    className="projectLink"
-                  >
-                    {ProJson.HousingDashboard.title}
-                  </Link>
-                </li>
-                <li value={ProJson.CutiePet.title}>
-                  <Link to={`projects/CutiePet`} className="projectLink">
-                    {ProJson.CutiePet.title}
-                  </Link>
-                </li>
+                <li className="brand whiteColor"><u>Ongoing Projects</u></li>
+                {Object.keys(ProJson).map((key,index) => {
+                  return (ProJson[key].type === 'active' &&
+                    (<li value={ProJson[key].title}>
+                      <Link to={`projects/${key}`} className="projectLink">
+                        {ProJson[key].title}
+                      </Link>
+                    </li>)
+                  );
+                })}
+                <div class="dropdown-divider"></div>
+
+                <li className="brand whiteColor"><u>Past Projects</u></li>
+                {Object.keys(ProJson).map((key,index) => {
+                  return (ProJson[key].type === 'past' &&
+                    (<li value={ProJson[key].title}>
+                      <Link to={`projects/${key}`} className="projectLink">
+                        {ProJson[key].title}
+                      </Link>
+                    </li>)
+                  );
+                })}
+                
               </ul>
             </div>
-            {/* <Link to={`projects`} className="btn btn-dark tab rect">
-              PROJECTS
-            </Link> */}
+
           </li>
           <li className="nav-item dropdown">
             <Link to={`departments`} className="btn btn-dark tab rect">

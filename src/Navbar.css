@@ -9,6 +9,7 @@
   letter-spacing: 0.1rem;
 }
 
+
 .rect {
   border-radius: 0;
 }
@@ -58,4 +59,8 @@
 
 .projectLink:hover {
   text-decoration: none;
+}
+.whiteColor {
+  color: white;
+  margin-left: 6%;
 }
