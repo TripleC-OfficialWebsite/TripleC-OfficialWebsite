@@ -1,16 +1,45 @@
 #departmentMenuContainer {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   padding: 10px;
   text-align: center;
   background-color: #181818;
+  height: 100%;
+  position: fixed;
+  z-index: 0;
+  width: 20%;
+  margin: auto;
+  padding-top: 1.5rem;
 }
 
-.link{
+.link {
   padding: 0.5rem 0;
+  border-radius: 5px;
 }
 
-a {
+#root .link:hover {
+  background-color: #4995ec;
+}
+
+#root .curmenu {
+  background-color: #4995ec;
+}
+
+.departmentLink {
   color: white;
+}
+
+.departmentLink:hover {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 664px) {
+  .link {
+    font-size: 0.9rem;
+    padding: 0.25rem 0;
+  }
+  #departmentMenuContainer {
+    width: 30%;
+  }
 }

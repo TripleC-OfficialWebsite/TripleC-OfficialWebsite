@@ -9,23 +9,23 @@
   },
   "PM": {
     "title": "Product Manager",
-    "description": ""
+    "description": "The Product Manager Department at Triple C also acts as product owner, team leader, and project manager responsible for driving the lifecycle of self-proposed product ideas. PMs typically work closely with cross-functional teams including designers, developers, marketers, to ensure that the product meets user needs, aligns with the project mission. Some specific works include conducting market research, defining product requirements, creating a product roadmap. As a PM at Triple C, you have the opportunity to grow as a young professional able to enter the tech field."
   },
   "SWE": {
     "title": "Software Engineer",
-    "description": ""
+    "description": "The Software Engineers at Triple C are responsible for developing applications on frontend, backend, and mobile, turning a hypothetical idea into a real product. We expect our software engineers to actively participate and communicate within projects and use their knowledge on various tech stacks for completing each checkpoint."
   },
   "DSC": {
     "title": "Data Scientist",
-    "description": ""
+    "description": "TripleC's data science division is committed to solving real-world problems through a data-driven approach. Our collaborative projects aim to cover topics beyond what is typically taught in traditional Data Science curricula, allowing members to develop a more comprehensive understanding of the field. We provide hands-on opportunities for members to learn about various areas of data science, including practical deep learning, data warehousing, data sourcing, and deploying machine learning models for public use. By participating in our projects, members can gain practical experience and develop the skills necessary to succeed in the ever-expanding field of data science."
   },
   "PD": {
     "title": "Product Designer",
-    "description": ""
+    "description": "The Product Design Department at Triple C is composed of creative individuals who are dedicated to designing innovative, user-friendly, aesthetically pleasing, and sustainable products that solve real-world problems. To foster collaboration and learning, we hold weekly workshops and design challenges that are open to design enthusiasts with diverse backgrounds and skill sets. We welcome you to join our team of creative problem solvers."
   },
   "HR": {
     "title": "Human Resource",
-    "description": ""
+    "description": "The Human Resource department at Triple C is responsible for the efficient management of personnel. It oversees the allocation of members to different roles and departments within the club, handles conflicts between team members and promotes a harmonious work environment. Additionally, the department is responsible for processing new membership applications, ensuring that all applicants meet the necessary criteria for joining the club. It also plays a key role in understanding the needs and intentions of existing members by gathering information about their skills, preferences and interests. The HR department's ultimate goal is to enhance the club's productivity by ensuring that all members are well-suited for their roles and are motivated to contribute towards Triple C’s success."
   },
   "BD": {
     "title": "Business Development",
@@ -41,6 +41,6 @@
   },
   "OP": {
     "title": "Operation",
-    "description": ""
+    "description": "The OP department is responsible for the publicity and planning of the community project team, online social media accounts, and the operation of various offline activities. We create outlines for social media and help give promotions on several platforms, mostly Wechat. We plan and control the behind-the-scenes of our various offline activities, such as Demo Day, team building, sponsorships events…etc. The operation team is part of the core of the external department by producing blueprints for TripleC. "
   }
 }

@@ -13,12 +13,13 @@ import Projects from "./Pages/Projects/Projects";
 import Departments from "./Pages/Departments/Departments";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import ProJson from "./Content/projects.json";
 
 function App() {
   const AppLayout = () => (
     <>
       <Navbar />
-      <div style={{paddingBottom: '4rem'}}>
+      <div style={{ marginBottom: "5rem", marginTop: "3.5rem" }}>
         <Outlet />
       </div>
       <Footer />
@@ -30,13 +31,10 @@ function App() {
       <Route element={<AppLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/newsletter" element={<Newsletter />} />
-        <Route path="/projects" element={<Projects/>} />
-        <Route path="/projects/Label" element={<Projects proName="Label"/>} />
-        <Route path="/projects/MapSocial" element={<Projects proName="MapSocial"/>} />
-        <Route path="/projects/GoalTritons" element={<Projects proName="GoalTritons"/>} />
-        <Route path="/projects/WeRide" element={<Projects proName="WeRide"/>} />
-        <Route path="/projects/Defit" element={<Projects proName="Defit"/>} />
-        <Route path="/projects/HousingDashboard" element={<Projects proName="HousingDashboard"/>} />
+        <Route path="/projects" element={<Projects />} />
+        {Object.keys(ProJson).map((key,index) => {
+          return (<Route path={`/projects/${key}`} element={<Projects proName={key} />} />);
+        })}
         <Route path="/departments" element={<Departments />} />
       </Route>
     )
@@ -44,7 +42,7 @@ function App() {
 
   return (
     <div className="App">
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </div>
   );
 }

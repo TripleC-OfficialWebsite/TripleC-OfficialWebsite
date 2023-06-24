@@ -1,10 +1,40 @@
 #departmentContentContainer {
-  flex-grow: 3;
   text-align: center;
-  width: 70%;
   color: white;
+  margin-left: 20%;
+  padding: 0 1rem;
+  margin-top: -3rem;
 }
 
-.departments{
-  padding: 1rem 0 0 0;
+.departments {
+  padding: 5rem 0 0 0;
+}
+
+.departmentDes {
+  padding: 2rem 8rem;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 960px) {
+  .departmentDes {
+    font-size: 1rem;
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 664px) {
+  .link {
+    font-size: 1rem;
+    padding: 0.25rem 0;
+  }
+  #departmentContentContainer {
+    margin-left: 30%;
+  }
+  .departmentTitle {
+    font-size: 1.25rem;
+  }
+  .departmentDes {
+    font-size: 0.75rem;
+    padding: 1rem;
+  }
 }

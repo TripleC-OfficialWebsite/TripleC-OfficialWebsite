@@ -1,15 +1,15 @@
-import React, { useState } from 'react'
-import MemberCard from '../../Components/MemberCard/MemberCard'
-import projects from '../../Content/projects.json'
-import member from '../../Content/members.json'
-import jsonPath from 'jsonpath'
-import './Projects.css'
+import React, { useState } from "react";
+import MemberCard from "../../Components/MemberCard/MemberCard";
+import projects from "../../Content/projects.json";
+import member from "../../Content/members.json";
+import jsonPath from "jsonpath";
+import "./Projects.css";
 
 function App(props) {
-  const project = projects[props.proName]
+  const project = projects[props.proName];
   // const expression = `$..[?(@.所属项目组 == "${props.proName}")]`;
-  const pictures = project.pictures
-  const techStack = project.techStack
+  const pictures = project.pictures;
+  const techStack = project.techStack;
   // const memberJSON = member;
   // const data = [
   //     {
@@ -29,68 +29,101 @@ function App(props) {
   // const memInfo = jsonPath.query(member, `$..[?(@.所属项目组 == "Label")]`);
   const memInfo = jsonPath.query(
     member,
-    `$..[?(@.所属项目组 == "${props.proName}")]`
-  )
+    `$..[?(/${props.proName}/.test(@.所属项目组))]`
+  );
+  console.log(memInfo);
 
   return (
     <div>
-      <div class='row'>
-        <div id='container_2'>
-          <div className='titles'>
-            <div className='project_name'>{project.title}</div>
-            <div className='time_line'>
-              Timeline
-              <img src={project.timeline} className='time_line_img'></img>
-            </div>
-            <div className='description'>Descriptions:</div>
-            <div className='description'>{project.description}</div>
-            <div className='team'>Team</div>
-            <div>{memInfo.length}</div> {/* number of members */}
-            <div className='member_card'>
-              <MemberCard memInfo={memInfo} />
-            </div>
-          </div>
-        </div>
-        <div class='column_pro'>
-          <div className='img-container'>
+      <div class="col">
+        <div className="titles">
+          <div className="project_name">{project.title}</div>
+          {project.slogan && <div className="slogan">{project.slogan}</div>}
+
+          <div className="img-container">
             <ul>
               {pictures.map((picture) => (
-                <li key={picture.id}>
+                <li className="imgItem" key={picture.id}>
                   <img
                     src={picture}
                     alt={props.proName}
-                    className='image'
+                    className="image"
                   ></img>
                 </li>
               ))}
             </ul>
           </div>
-          <div className='titles'>
-            <div className='tech_stack'>
-              <div className='subtitle_pro'>Tech Stack</div>
-              <ul>
-                {techStack.map((tech) => (
-                  <li key={tech.id}>{tech}</li>
-                ))}
-              </ul>
+          {project.timeline && (
+            <div className="time_line">
+              <div className="subtitle_pro">Timeline</div>
+              <img
+                src={project.timeline}
+                className="time_line_img"
+                alt="projImg"
+              ></img>
             </div>
+          )}
 
-            <div className='padding'></div>
+          <div className="subtitle_pro">Descriptions:</div>
+          <div className="description">{project.description}</div>
+          <div className="subtitle_pro">Team</div>
+          <div className="team">
+            {memInfo.map((member) => (
+              <div className="member_card">
+                <MemberCard member={member} page="project" />
+              </div>
+            ))}
+          </div>
+        </div>
 
-            <div className='links'>
-              <div className='subtitle_pro'>Links</div>
-              <div>Demo: {project.links.demo}</div>
-              <div>Contact: {project.links.contact}</div>
-            </div>
-
-            <div className='padding'></div>
+        <div className="titles">
+          <div className="tech_stack">
+            <div className="subtitle_pro">Tech Stack</div>
+            <ul>
+              {techStack.map((tech) => (
+                <li key={tech.id}>{tech}</li>
+              ))}
+            </ul>
           </div>
 
-          <div className='padding'></div>
+          <div className="padding"></div>
+
+          {(project.links.demo ||
+            project.links.repo ||
+            project.links.contact) && (
+            <div className="links">
+              <div className="subtitle_pro">Links</div>
+              {project.links.demo && (
+                <div>
+                  <strong>Demo</strong>:{" "}
+                  <a target="_blank" rel="noreferrer" href={project.links.demo}>
+                    {project.links.demo}
+                  </a>
+                </div>
+              )}
+              {project.links.repo && (
+                <div>
+                  <strong>Repo</strong>:{" "}
+                  <a target="_blank" rel="noreferrer" href={project.links.repo}>
+                    {project.links.repo}
+                  </a>
+                </div>
+              )}
+              {project.links.contact && (
+                <div>
+                  <strong>Contact</strong>: {project.links.contact}
+                </div>
+              )}
+            </div>
+          )}
+
+          <div className="padding"></div>
         </div>
+
+        <div className="padding"></div>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

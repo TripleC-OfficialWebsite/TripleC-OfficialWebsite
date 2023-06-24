@@ -1,129 +1,163 @@
 .dropdown-menu a {
-    display: block;
-    padding: 5px;
-  }
-  
-  .dropdown-menu a:hover {
-    cursor: pointer;
-    background-color: #3a3a3a;
-  }
-
-#container_2 {
-    width: 50%;
-    height: 100%;
-    position: relative;
-    margin: 0 auto;
-    max-width: 1170px;
-    padding-right: 3%;
-}
-.column_pro{
-    width: 50%;
-    position: relative;
-    padding-top: 4%;
-
+  display: block;
+  padding: 5px;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
+.dropdown-menu a:hover {
+  cursor: pointer;
+  background-color: #3a3a3a;
+}
 
-    /* display: flex;
+.col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  max-width: 1080px;
+  margin: 6rem auto;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+
+  /* display: flex;
     flex-direction: row;
     padding-left: 10%; */
 }
 
-.titles{
-    color:white;
+.titles {
+  color: white;
 }
 
-.project_name{
-    padding-top: 3rem;
-    padding-bottom: 1rem;
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 600;
-    font-size: 2.5rem !important;
-    font-stretch: extra-expanded;
+.project_name {
+  padding-top: 3rem;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  font-stretch: extra-expanded;
 }
 
-.time_line{
-    font-family: "Fira Sans", sans-serif;
-    padding-bottom: 1rem;
-    font-size: 1.3rem !important;
-    line-height: 2rem;
-    font-weight: 600;
-}
-.time_line_img{
-    width: 100%;
+.time_line_img {
+  width: 100%;
 }
 
-.description{
-    font-family: "Fira Sans", sans-serif;
-    font-size: 0.95rem !important;
-    font-weight: 200;
-    max-width: 650px;
+.description {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  word-wrap: break-word;
 }
 
-.team{
-    padding-top: 3rem;
-    font-family: "Fira Sans", sans-serif;
-    padding-bottom: 1rem;
-    font-size: 1.5rem !important;
-    line-height: 2rem;
-    font-weight: 600;
+.team {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-img{
-    padding-bottom: 2rem;;
+.member_card {
+  margin: 0.5rem;
 }
 
-.images{
-    display: flex;
-    flex-direction: row;
+.slogan {
+  color: gray;
+  font-family: "Fira Sans", sans-serif;
+  word-break: break-word;
+  font-weight: 400;
+  font-size: 1.25rem;
 }
 
-.tech_stack{
-    display: flex;
-    flex-direction: column;
+.images {
+  display: flex;
+  flex-direction: row;
 }
 
-.subtitle_pro{
-    font-family: "Fira Sans", sans-serif;
-    font-size: 1.5rem !important;
-    line-height: 2rem;
-    font-weight: 600;
-    padding-top: 2%;
+.tech_stack {
+  display: flex;
+  flex-direction: column;
 }
 
-.padding{
-    padding-top:3%;
+.tech_stack li {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  word-wrap: break-word;
 }
 
-.img-container ul{
-    list-style-type: none;
-    display: flex;
+#root .links {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  word-wrap: break-word;
 }
 
-ul{
-    list-style-type: none;
+#root .links a {
+  color: white;
 }
 
-.img-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
+.subtitle_pro {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  padding: 2rem 0;
 }
 
-.img-container li{
-    display: block;
-    padding: 1rem;
-    padding-left: 0;
+.padding {
+  padding-top: 3%;
 }
 
-.image{
-    width: 100%;
+.img-container ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.imgItem {
+  display: block;
+  padding: 2rem;
+  padding-left: 0;
+  flex: 1 1 0px;
+}
+
+.image {
+  width: 100%;
+}
+
+@media screen and (max-width: 664px) {
+  .project_name {
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+  }
+  .imgItem {
+    padding: 0;
+  }
+  .img-container ul {
+    padding: 0;
+  }
+  .subtitle_pro {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+
+    padding: 1.5rem 0;
+  }
+  .tech_stack li {
+    font-size: 1rem;
+  }
+
+  #root .links {
+    font-size: 1rem;
+  }
+
+  .dropdown-menu a {
+    padding: 0;
+  }
 }

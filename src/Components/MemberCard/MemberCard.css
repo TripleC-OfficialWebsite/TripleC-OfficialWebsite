@@ -91,3 +91,57 @@
   cursor: not-allowed;
   pointer-events: none;
 }
+
+.contactLink {
+  width: 36px;
+  height: 36px;
+}
+
+@media screen and (max-width: 664px) {
+  .parent-card {
+    height: 125px;
+    width: 95px;
+  }
+  .memberCard {
+    height: 125px;
+    width: 95px;
+    padding: 12.5px;
+    border-radius: 2.5px;
+  }
+  .contact-card {
+    height: 125px;
+    width: 95px;
+    border-radius: 2.5px;
+  }
+  .card-bottom {
+    margin-top: 5px;
+  }
+  .member-name {
+    font-size: 8px;
+  }
+  .member-role {
+    margin-top: 2.5px;
+    color: gray;
+    font-size: 6.5px;
+  }
+  .Icon {
+    width: 12px;
+    height: 12px;
+    fill: white;
+    margin: 3px;
+  }
+
+  .disabled {
+    width: 12px;
+    height: 12px;
+    fill: gray;
+    margin: 3px;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  .contactLink {
+    width: 18px;
+    height: 18px;
+  }
+}

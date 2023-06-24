@@ -3,11 +3,13 @@
   margin: 0 auto;
   color: white;
   max-width: 1170px;
+  width: 80%;
 }
 .text-center {
   color: white;
-  text-align: center;
+  margin: 0 auto;
   padding: 15px;
+  width: 80%;
 }
 
 .timeline {
@@ -16,9 +18,7 @@
   width: 80%;
   font-family: "Fira Sans", sans-serif;
 }
-ul {
-  padding: 0px;
-}
+
 .timeline ul li {
   margin-bottom: 30px;
   list-style-type: none;
@@ -32,7 +32,7 @@ ul {
   height: 35px;
   background-color: #1976d2;
   border-radius: 100%;
-  z-index: 2;
+  z-index: 0;
   border: 2px gray solid;
   position: relative;
   left: 0.75px;

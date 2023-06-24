@@ -77,8 +77,8 @@ const PhotoAlbum = () => {
   return (
     <div>
       <div id="containerPA">
-        <h1 className="titlePA">{photoAlbumJson.photoAlbum.titlePA}</h1>
-        <h2 className="subtitlePA">{photoAlbumJson.photoAlbum.subtitlePA}</h2>
+        <h1 className="title">{photoAlbumJson.photoAlbum.titlePA}</h1>
+        <h2 className="subtitle">{photoAlbumJson.photoAlbum.subtitlePA}</h2>
         <PaCarousel />
       </div>
     </div>

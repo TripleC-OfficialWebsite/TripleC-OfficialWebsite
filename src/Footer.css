@@ -13,7 +13,7 @@
 .socialIcon {
   width: 24px;
   height: 24px;
-  margin: 0 16px;
+  margin: 0 12px;
   fill: white;
 }
 
@@ -25,9 +25,9 @@
 
 .blockone {
   font-weight: 500;
-  line-height: 2rem;
+  line-height: 1.25rem;
   font-family: "Fira Sans", sans-serif !important;
-  font-size: 1.25rem !important;
+  font-size: 1.25rem;
   letter-spacing: 0.0125em !important;
 }
 
@@ -40,8 +40,15 @@
   text-align: right;
 }
 
+@media screen and (max-width: 1305px) {
+  .blockone {
+    line-height: 1.25rem;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .footerContainer {
+    padding: 8px;
     flex-direction: column;
   }
   .blockone {
@@ -49,6 +56,6 @@
   }
   .blockthree {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0.25rem;
   }
 }

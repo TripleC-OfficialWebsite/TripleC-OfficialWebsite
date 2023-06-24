@@ -1,4 +1,5 @@
 import "./Featured.css";
+import { Link } from "react-router-dom";
 
 import featuredJson from "../../Content/home.json";
 
@@ -8,9 +9,7 @@ function Featured() {
       <div className="fpLayout">
         <div className="titleSection">
           <h1 className="title color">{featuredJson.featuredProjects.title}</h1>
-          <h2 className="subtitle color">
-            {featuredJson.featuredProjects.subtitle}
-          </h2>
+          <h2 className="subtitle">{featuredJson.featuredProjects.subtitle}</h2>
         </div>
 
         <div className="Project">
@@ -26,9 +25,12 @@ function Featured() {
             />
             <div className="Pro1Descript txt color">
               {featuredJson.featuredProjects.sections[0].description}{" "}
-              <a href={featuredJson.featuredProjects.sections[0].link}>
+              <Link
+                to={featuredJson.featuredProjects.sections[0].link}
+                style={{ color: "#146C94" }}
+              >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -44,9 +46,12 @@ function Featured() {
             />
             <div className="Pro1Descript txt color">
               {featuredJson.featuredProjects.sections[1].description}{" "}
-              <a href={featuredJson.featuredProjects.sections[1].link}>
+              <Link
+                to={featuredJson.featuredProjects.sections[1].link}
+                style={{ color: "#146C94" }}
+              >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
         </div>

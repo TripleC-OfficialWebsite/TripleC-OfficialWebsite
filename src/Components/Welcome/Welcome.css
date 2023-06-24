@@ -32,7 +32,7 @@
 .welcomeTitle {
   font-family: "Fira Sans", sans-serif;
   word-break: break-word;
-  font-size: 3rem !important;
+  font-size: 3rem;
   font-weight: 700;
   width: 100%;
 }
@@ -40,7 +40,7 @@
 .welcomeSubtitle {
   font-family: "Fira Sans", sans-serif;
   word-break: break-word;
-  font-size: 1.25rem !important;
+  font-size: 1.25rem;
   line-height: 2rem;
   font-weight: 500;
   width: 100%;
@@ -53,5 +53,14 @@
   }
   .welcomeTitles {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .welcomeTitle {
+    font-size: 2.25rem;
+  }
+  .welcomeSubtitle {
+    font-size: 1rem;
   }
 }
