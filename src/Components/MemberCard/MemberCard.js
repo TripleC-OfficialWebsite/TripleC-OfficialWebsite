@@ -6,8 +6,16 @@ import MemberJson from "../../Content/members.json";
 import ButtonMailto from "./ButtonMailto";
 
 function MemberCard(props) {
+
+  const name = props.member.fullname;
+  const departRole = Object.values(props.member.department)[0];
+  const projectRole = Object.values(props.member.project);
+  const linkedin = props.member.linkedin;
+  const git = props.member.github;
+  const email = props.member.email;
+  
   const [imageUrl, setImageUrl] = useState(null);
-  const filename = props.member["照片(optional)"];
+  const filename = `${name.replace(' ', '_')}.jpg`;
 
   const fetchImageUrl = useCallback(async () => {
       const response = await fetch(
@@ -28,18 +36,14 @@ function MemberCard(props) {
       if (data[0] && data[0][filename]) {
         setImageUrl(data[0][filename]);
       }
+
     }, [filename]);
 
   useEffect(() => {
     fetchImageUrl();
   }, [fetchImageUrl]);
 
-  const name = props.member.fullname;
-  const role = props.member.department;
-  const projectRole = props.member.project;
-  const linkedin = props.member.linkedin;
-  const git = props.member.github;
-  const email = props.member.email;
+  
   const image = imageUrl;
 
   return (
@@ -63,7 +67,7 @@ function MemberCard(props) {
           <div className="card-bottom">
             <div className="member-name">{name}</div>
             <div className="member-role">
-              {props.page === "department" ? role : projectRole}
+              {props.page === "department" ? departRole : projectRole}
             </div>
           </div>
         </div>
