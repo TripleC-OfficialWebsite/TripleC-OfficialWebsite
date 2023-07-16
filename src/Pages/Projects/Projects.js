@@ -1,37 +1,107 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import MemberCard from "../../Components/MemberCard/MemberCard";
-import projects from "../../Content/projects.json";
-import member from "../../Content/members.json";
-import jsonPath from "jsonpath";
+// import projects from "../../Content/projects.json";
+// import member from "../../Content/members.json";
+// import jsonPath from "jsonpath";
 import "./Projects.css";
 
 function App(props) {
-  const project = projects[props.proName];
-  // const expression = `$..[?(@.所属项目组 == "${props.proName}")]`;
-  const pictures = project.pictures;
-  const techStack = project.techStack;
-  // const memberJSON = member;
-  // const data = [
-  //     {
-  //       "make": "Toyota",
-  //       "model": "Camry",
-  //       "year": 2018
-  //     },
-  //     {
-  //       "make": "Honda",
-  //       "model": "Accord",
-  //       "year": 2019
-  //     }
-  // ];
-  // const num = 2019;
-  // const newerCars = jsonPath.query(data, `$..[?(@.year == "${num}")]`);
-  // Output: [{"make": "Honda", "model": "Accord", "year": 2019}]
-  // const memInfo = jsonPath.query(member, `$..[?(@.所属项目组 == "Label")]`);
-  const memInfo = jsonPath.query(
-    member,
-    `$..[?(/${props.proName}/.test(@.所属项目组))]`
-  );
-  console.log(memInfo);
+
+  const [memInfo, setMembers] = useState([]);
+  const [project, setProject] = useState({});
+  const [links, setLinks] = useState({});
+  const [techStack, settechStack] = useState([]);
+  const [pictures, setPictures] = useState([]);
+
+  useEffect(() => {
+    //Get Project Info
+    const fetchProject = async () => {
+      try {
+        const response_project = await fetch(
+          `https://best-backend-ever.herokuapp.com/pro/project/${encodeURIComponent(props.proName)}`,
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }  
+        );
+
+        const data = await response_project.json();
+    
+        if (!response_project.ok) {
+          throw new Error(data.error.message);
+        }
+
+        setProject(data[0]);
+        settechStack(data[0].techStack);
+        setLinks(data[0].links);
+    
+      } catch (error) {
+        console.error(`Error: ${error}`);
+      }
+    };
+
+    //-------------------------------------------------------------------------------------------
+    //Get Project members
+    const proName = props.proName.replace(/\s/g, ""); //remove space in between
+    console.log(`https://best-backend-ever.herokuapp.com/mem/member_filter/all/${proName}`);
+    const fetchMembers = async () => {
+      try {
+        const response_other = await fetch(
+          `https://best-backend-ever.herokuapp.com/mem/member_filter/all/${proName}`,
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
+
+        const data = await response_other.json();
+
+        if (!response_other.ok) {
+          throw new Error(data.error.message);
+        }
+
+        setMembers(data);
+      } catch (error) {
+        console.error(`Error: ${error}`);
+      }
+    };
+
+    //-------------------------------------------------------------------------------------------
+    //Get Project Image Url.
+    const fetchPictures = async () => {
+      try {
+        const response_project = await fetch(
+          `https://best-backend-ever.herokuapp.com/pro/project_photo/${encodeURIComponent(props.proName)}`,
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }  
+        );
+
+        const data = await response_project.json();
+    
+        if (!response_project.ok) {
+          throw new Error(data.error.message);
+        }
+
+        const imageUrl = data.map((url) => Object.values(url)[0]);
+        setPictures(imageUrl);
+    
+      } catch (error) {
+        console.error(`Error: ${error}`);
+      }
+    };
+
+    fetchProject();
+    fetchMembers();
+    fetchPictures();
+  }, [props.proName]);
 
   return (
     <div>
@@ -88,30 +158,30 @@ function App(props) {
 
           <div className="padding"></div>
 
-          {(project.links.demo ||
-            project.links.repo ||
-            project.links.contact) && (
+          {(links.demo ||
+            links.repo ||
+            links.contact) && (
             <div className="links">
               <div className="subtitle_pro">Links</div>
-              {project.links.demo && (
+              {links.demo && (
                 <div>
                   <strong>Demo</strong>:{" "}
-                  <a target="_blank" rel="noreferrer" href={project.links.demo}>
-                    {project.links.demo}
+                  <a target="_blank" rel="noreferrer" href={links.demo}>
+                    {links.demo}
                   </a>
                 </div>
               )}
-              {project.links.repo && (
+              {links.repo && (
                 <div>
                   <strong>Repo</strong>:{" "}
-                  <a target="_blank" rel="noreferrer" href={project.links.repo}>
-                    {project.links.repo}
+                  <a target="_blank" rel="noreferrer" href={links.repo}>
+                    {links.repo}
                   </a>
                 </div>
               )}
-              {project.links.contact && (
+              {links.contact && (
                 <div>
-                  <strong>Contact</strong>: {project.links.contact}
+                  <strong>Contact</strong>: {links.contact}
                 </div>
               )}
             </div>

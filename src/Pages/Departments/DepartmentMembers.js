@@ -1,4 +1,4 @@
-import MemberCardJson from '../../Content/members.json'
+//import MemberCardJson from '../../Content/members.json'
 import MemberCards from './CardsContainer'
 import React, { useState, useEffect } from 'react';
 

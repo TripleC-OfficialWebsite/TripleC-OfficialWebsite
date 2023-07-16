@@ -2,13 +2,13 @@ import React from "react";
 
 import { useState, useEffect, useCallback } from "react";
 import "./MemberCard.css";
-import MemberJson from "../../Content/members.json";
+//import MemberJson from "../../Content/members.json";
 import ButtonMailto from "./ButtonMailto";
 
 function MemberCard(props) {
 
   const name = props.member.fullname;
-  const departRole = Object.values(props.member.department)[0];
+  const departRole = Object.values(props.member.department);
   const projectRole = Object.values(props.member.project);
   const linkedin = props.member.linkedin;
   const git = props.member.github;
@@ -19,7 +19,7 @@ function MemberCard(props) {
 
   const fetchImageUrl = useCallback(async () => {
       const response = await fetch(
-        `http://127.0.0.1:5000/photo?filename=${filename}`,
+        `https://best-backend-ever.herokuapp.com/photo?filename=${filename}`,
         {
           method: "GET",
           headers: {
@@ -67,7 +67,9 @@ function MemberCard(props) {
           <div className="card-bottom">
             <div className="member-name">{name}</div>
             <div className="member-role">
-              {props.page === "department" ? departRole : projectRole}
+              {props.page === "department" 
+              ? [new Set(departRole)].map(([role, index]) => <p key={index}>{role}</p>) 
+              : [new Set(projectRole)].map(([role, index]) => <p key={index}>{role}</p>)}
             </div>
           </div>
         </div>
