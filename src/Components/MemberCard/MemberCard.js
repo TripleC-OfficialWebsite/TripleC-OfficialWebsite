@@ -6,45 +6,40 @@ import MemberJson from "../../Content/members.json";
 import ButtonMailto from "./ButtonMailto";
 
 function MemberCard(props) {
-
   const name = props.member.fullname;
   const departRole = Object.values(props.member.department)[0];
   const projectRole = Object.values(props.member.project);
   const linkedin = props.member.linkedin;
   const git = props.member.github;
   const email = props.member.email;
-  
-  const [imageUrl, setImageUrl] = useState(null);
-  const filename = `${name.replace(' ', '_')}.jpg`;
 
-  const fetchImageUrl = useCallback(async () => {
+  const [imageUrl, setImageUrl] = useState(null);
+  const filename = `${name.replace(" ", "_")}.jpg`;
+
+  useEffect(() => {
+    const fetchImageUrl = async () => {
       const response = await fetch(
-        `http://127.0.0.1:5000/photo?filename=${filename}`,
+        `https://best-backend-ever.herokuapp.com/photo?filename=${filename}`,
         {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
           },
-        }  
-      )
+        }
+      );
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.error.message);
+        setImageUrl(null);
       }
 
       if (data[0] && data[0][filename]) {
         setImageUrl(data[0][filename]);
       }
+    };
 
-    }, [filename]);
-
-  useEffect(() => {
     fetchImageUrl();
-  }, [fetchImageUrl]);
-
-  
-  const image = imageUrl;
+  }, []);
 
   return (
     <div className="parent-card">
@@ -53,8 +48,8 @@ function MemberCard(props) {
           <div className="card-top">
             <img
               src={
-                image
-                  ? image
+                imageUrl
+                  ? imageUrl
                   : `Images/Avatars/avatar-d${
                       Math.floor(Math.random() * 14) + 1
                     }.png`
