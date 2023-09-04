@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import MemberCard from "../../Components/MemberCard/MemberCard";
 import projects from "../../Content/projects.json";
 import member from "../../Content/members.json";
@@ -10,28 +10,30 @@ function App(props) {
   // const expression = `$..[?(@.所属项目组 == "${props.proName}")]`;
   const pictures = project.pictures;
   const techStack = project.techStack;
-  // const memberJSON = member;
-  // const data = [
-  //     {
-  //       "make": "Toyota",
-  //       "model": "Camry",
-  //       "year": 2018
-  //     },
-  //     {
-  //       "make": "Honda",
-  //       "model": "Accord",
-  //       "year": 2019
-  //     }
-  // ];
-  // const num = 2019;
-  // const newerCars = jsonPath.query(data, `$..[?(@.year == "${num}")]`);
-  // Output: [{"make": "Honda", "model": "Accord", "year": 2019}]
-  // const memInfo = jsonPath.query(member, `$..[?(@.所属项目组 == "Label")]`);
-  const memInfo = jsonPath.query(
-    member,
-    `$..[?(/${props.proName}/.test(@.所属项目组))]`
-  );
-  console.log(memInfo);
+
+  const [members, setMembers] = useState([]);
+
+  useEffect(() => {
+    fetch("https://best-backend-ever.herokuapp.com/mem/member")
+      .then((response) => response.json())
+      .then((data) => {
+        const currProMembers = data.filter(
+          (member) => member.project[props.proName]
+        );
+
+        currProMembers.sort(compare); // sort members by Last Name
+
+        setMembers(currProMembers); // update state with new members list
+      })
+      .catch((err) => console.error(err));
+  }, []); // useEffect will run when 'project' changes
+
+  function compare(a, b) {
+    a = a.fullname.split(" ").slice(-1);
+    b = b.fullname.split(" ").slice(-1);
+    if (a === b) return 0;
+    return a < b ? -1 : 1;
+  }
 
   return (
     <div>
@@ -68,7 +70,7 @@ function App(props) {
           <div className="description">{project.description}</div>
           <div className="subtitle_pro">Team</div>
           <div className="team">
-            {memInfo.map((member) => (
+            {members.map((member) => (
               <div className="member_card">
                 <MemberCard member={member} page="project" />
               </div>
